@@ -34,7 +34,9 @@ var StepConnector = function StepConnector(props, context) {
 
   var styles = {
     wrapper: {
-      flex: '1 1 auto'
+      flex: '1 1 auto',
+      alignSelf: 'flex-start',
+      marginTop: '10px'
     },
     line: {
       display: 'block',
@@ -46,9 +48,14 @@ var StepConnector = function StepConnector(props, context) {
    * Clean up once we can use CSS pseudo elements
    */
   if (stepper.orientation === 'horizontal') {
-    styles.line.marginLeft = -6;
+    styles.line.marginLeft = -87;
+    styles.line.marginRight = -47;
+    styles.line.borderBottomStyle = 'solid';
+    styles.line.borderBottomWidth = 1;
     styles.line.borderTopStyle = 'solid';
     styles.line.borderTopWidth = 1;
+    styles.line.height = 5;
+    styles.line.background = '#ccc';
   } else if (stepper.orientation === 'vertical') {
     styles.wrapper.marginLeft = 14 + 11; // padding + 1/2 icon
     styles.line.borderLeftStyle = 'solid';

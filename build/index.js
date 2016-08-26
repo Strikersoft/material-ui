@@ -327,6 +327,3 @@ exports.Toolbar = _Toolbar3.default;
 exports.ToolbarGroup = _ToolbarGroup3.default;
 exports.ToolbarSeparator = _ToolbarSeparator3.default;
 exports.ToolbarTitle = _ToolbarTitle3.default;
-
-
-console.log('SWGG!!!!!!!!!!!!!!');

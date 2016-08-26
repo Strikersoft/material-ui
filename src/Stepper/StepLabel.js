@@ -13,10 +13,11 @@ const getStyles = ({active, completed, disabled}, {muiTheme, stepper}) => {
 
   const styles = {
     root: {
-      height: orientation === 'horizontal' ? 72 : 64,
+      height: orientation === 'horizontal' ? 52 : 64,
       color: textColor,
       display: 'flex',
       alignItems: 'center',
+      flexDirection: 'column',
       fontSize: 14,
       paddingLeft: 14,
       paddingRight: 14,
@@ -24,15 +25,23 @@ const getStyles = ({active, completed, disabled}, {muiTheme, stepper}) => {
     icon: {
       color: iconColor,
       display: 'block',
-      fontSize: 24,
-      width: 24,
-      height: 24,
+      fontSize: 12,
+      width: 30,
+      height: 30,
     },
     iconContainer: {
       display: 'flex',
       alignItems: 'center',
-      paddingRight: 8,
-      width: 24,
+      marginRight: 10,
+      marginLeft: 10,
+      background: '#fff',
+      width: 30,
+      zIndex: 8,
+    },
+    textContainer: {
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
     },
   };
 
@@ -144,13 +153,15 @@ class StepLabel extends Component {
     const icon = this.renderIcon(completed, userIcon, styles);
 
     return (
-      <span style={prepareStyles(Object.assign(styles.root, style))} {...other}>
+      <span>
+        <span style={prepareStyles(Object.assign(styles.root, style))} {...other}>
         {icon && (
           <span style={prepareStyles(styles.iconContainer)}>
             {icon}
           </span>
         )}
-        {children}
+        </span>
+        <div style={prepareStyles(styles.textContainer)}>{children}</div>
       </span>
     );
   }

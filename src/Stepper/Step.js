@@ -5,6 +5,7 @@ const getStyles = ({index}, {stepper}) => {
   const styles = {
     root: {
       flex: '0 0 auto',
+      maxWidth: '200px',
     },
   };
 

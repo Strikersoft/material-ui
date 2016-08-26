@@ -52,10 +52,11 @@ var getStyles = function getStyles(_ref, _ref2) {
 
   var styles = {
     root: {
-      height: orientation === 'horizontal' ? 72 : 64,
+      height: orientation === 'horizontal' ? 52 : 64,
       color: textColor,
       display: 'flex',
       alignItems: 'center',
+      flexDirection: 'column',
       fontSize: 14,
       paddingLeft: 14,
       paddingRight: 14
@@ -63,15 +64,23 @@ var getStyles = function getStyles(_ref, _ref2) {
     icon: {
       color: iconColor,
       display: 'block',
-      fontSize: 24,
-      width: 24,
-      height: 24
+      fontSize: 12,
+      width: 30,
+      height: 30
     },
     iconContainer: {
       display: 'flex',
       alignItems: 'center',
-      paddingRight: 8,
-      width: 24
+      marginRight: 10,
+      marginLeft: 10,
+      background: '#fff',
+      width: 30,
+      zIndex: 8
+    },
+    textContainer: {
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden'
     }
   };
 
@@ -154,13 +163,21 @@ var StepLabel = function (_Component) {
 
       return _react2.default.createElement(
         'span',
-        _extends({ style: prepareStyles((0, _simpleAssign2.default)(styles.root, style)) }, other),
-        icon && _react2.default.createElement(
+        null,
+        _react2.default.createElement(
           'span',
-          { style: prepareStyles(styles.iconContainer) },
-          icon
+          _extends({ style: prepareStyles((0, _simpleAssign2.default)(styles.root, style)) }, other),
+          icon && _react2.default.createElement(
+            'span',
+            { style: prepareStyles(styles.iconContainer) },
+            icon
+          )
         ),
-        children
+        _react2.default.createElement(
+          'div',
+          { style: prepareStyles(styles.textContainer) },
+          children
+        )
       );
     }
   }]);

@@ -33,7 +33,8 @@ var getStyles = function getStyles(_ref, _ref2) {
 
   var styles = {
     root: {
-      flex: '0 0 auto'
+      flex: '0 0 auto',
+      maxWidth: '200px'
     }
   };
 
