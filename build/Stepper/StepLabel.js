@@ -55,11 +55,9 @@ var getStyles = function getStyles(_ref, _ref2) {
       height: orientation === 'horizontal' ? 52 : 64,
       color: textColor,
       display: 'flex',
-      alignItems: 'center',
+      alignItems: 'flex-start',
       flexDirection: 'column',
-      fontSize: 14,
-      paddingLeft: 14,
-      paddingRight: 14
+      fontSize: 12
     },
     icon: {
       color: iconColor,
