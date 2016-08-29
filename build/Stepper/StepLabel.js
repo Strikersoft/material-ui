@@ -80,7 +80,8 @@ var getStyles = function getStyles(_ref, _ref2) {
       textTransform: 'uppercase',
       color: '#9fa2a4',
       fontSize: '12px',
-      fontWeight: 600
+      fontWeight: 600,
+      padding: '0 14px'
     }
   };
 
