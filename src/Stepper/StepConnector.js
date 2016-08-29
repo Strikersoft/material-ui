@@ -21,6 +21,7 @@ const StepConnector = (props, context) => {
       flex: '1 1 auto',
       alignSelf: 'flex-start',
       marginTop: '10px',
+      position: 'absolute',
     },
     line: {
       display: 'block',
@@ -32,8 +33,8 @@ const StepConnector = (props, context) => {
    * Clean up once we can use CSS pseudo elements
    */
   if (stepper.orientation === 'horizontal') {
-    styles.line.marginLeft = -87;
-    styles.line.marginRight = -47;
+    styles.line.marginLeft = -67;
+    styles.line.marginRight = -67;
     styles.line.borderBottomStyle = 'solid';
     styles.line.borderBottomWidth = 1;
     styles.line.borderTopStyle = 'solid';

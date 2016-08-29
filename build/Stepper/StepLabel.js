@@ -71,21 +71,23 @@ var getStyles = function getStyles(_ref, _ref2) {
     iconContainer: {
       display: 'flex',
       alignItems: 'center',
-      marginRight: 10,
-      marginLeft: 10,
       background: '#fff',
       width: 30,
-      zIndex: 8
+      zIndex: 10
     },
     textContainer: {
       textOverflow: 'ellipsis',
       whiteSpace: 'nowrap',
-      overflow: 'hidden'
+      overflow: 'hidden',
+      textTransform: 'uppercase',
+      color: '#9fa2a4',
+      fontSize: '12px',
+      fontWeight: 600
     }
   };
 
   if (active) {
-    styles.root.fontWeight = 500;
+    styles.textContainer.color = '#4db3a2';
   }
 
   if (!completed && !active) {

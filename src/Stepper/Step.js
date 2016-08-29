@@ -5,13 +5,13 @@ const getStyles = ({index}, {stepper}) => {
   const styles = {
     root: {
       flex: '0 0 auto',
-      maxWidth: '200px',
+      width: '25%',
     },
   };
 
   if (index > 0) {
     if (orientation === 'horizontal') {
-      styles.root.marginLeft = -6;
+      styles.root.marginLeft = 0;
     } else if (orientation === 'vertical') {
       styles.root.marginTop = -14;
     }
