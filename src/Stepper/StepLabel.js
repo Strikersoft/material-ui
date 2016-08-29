@@ -23,7 +23,7 @@ const getStyles = ({active, completed, disabled}, {muiTheme, stepper}) => {
     icon: {
       color: iconColor,
       display: 'block',
-      fontSize: 12,
+      fontSize: 9,
       width: 30,
       height: 30,
     },
@@ -124,9 +124,9 @@ class StepLabel extends Component {
           <circle cx="12" cy="12" r="10" />
           <text
             x="12"
-            y="16"
+            y="15"
             textAnchor="middle"
-            fontSize="12"
+            fontSize="9"
             fill="#fff"
           >
             {icon}

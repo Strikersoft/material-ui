@@ -62,7 +62,7 @@ var getStyles = function getStyles(_ref, _ref2) {
     icon: {
       color: iconColor,
       display: 'block',
-      fontSize: 12,
+      fontSize: 9,
       width: 30,
       height: 30
     },
@@ -132,9 +132,9 @@ var StepLabel = function (_Component) {
             'text',
             {
               x: '12',
-              y: '16',
+              y: '15',
               textAnchor: 'middle',
-              fontSize: '12',
+              fontSize: '9',
               fill: '#fff'
             },
             icon
