@@ -10,6 +10,8 @@ const getStyles = (props) => {
       alignContent: 'center',
       alignItems: orientation === 'horizontal' ? 'center' : 'stretch',
       justifyContent: 'space-between',
+      position: 'relative',
+      overflow: 'hidden ',
     },
   };
 };

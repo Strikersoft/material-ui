@@ -35,7 +35,9 @@ var getStyles = function getStyles(props) {
       flexDirection: orientation === 'horizontal' ? 'row' : 'column',
       alignContent: 'center',
       alignItems: orientation === 'horizontal' ? 'center' : 'stretch',
-      justifyContent: 'space-between'
+      justifyContent: 'space-between',
+      position: 'relative',
+      overflow: 'hidden '
     }
   };
 };
