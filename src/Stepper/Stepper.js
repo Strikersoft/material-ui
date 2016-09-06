@@ -7,8 +7,8 @@ const getStyles = (props) => {
     root: {
       display: 'flex',
       flexDirection: orientation === 'horizontal' ? 'row' : 'column',
-      alignContent: 'center',
-      alignItems: orientation === 'horizontal' ? 'center' : 'stretch',
+      alignContent: '',
+      alignItems: orientation === 'horizontal' ? '' : 'stretch',
       justifyContent: 'space-between',
       position: 'relative',
       overflow: 'hidden ',
