@@ -5,7 +5,7 @@ const getStyles = ({index}, {stepper}) => {
   const styles = {
     root: {
       flex: '0 0 auto',
-      width: '25%',
+      width: '20%',
     },
   };
 
@@ -52,7 +52,7 @@ export default class Step extends Component {
     /**
      * Override the inline-style of the root element.
      */
-    style: PropTypes.object,
+    style: PropTypes.object
   };
 
   static contextTypes = {
@@ -93,7 +93,7 @@ export default class Step extends Component {
     const styles = getStyles(this.props, this.context);
 
     return (
-      <div style={prepareStyles(Object.assign(styles.root, style))} {...other}>
+      <div className="step-block" style={prepareStyles(Object.assign(styles.root, style))} {...other}>
         {React.Children.map(children, this.renderChild)}
       </div>
     );

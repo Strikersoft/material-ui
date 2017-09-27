@@ -34,8 +34,8 @@ const StepConnector = (props, context) => {
    * Clean up once we can use CSS pseudo elements
    */
   if (stepper.orientation === 'horizontal') {
-    styles.line.marginLeft = '-25%';
-    styles.line.marginRight = '-25%';
+    styles.line.marginLeft = '-20%';
+    styles.line.marginRight = '-20%';
     styles.line.borderBottomStyle = 'solid';
     styles.line.borderBottomWidth = 1;
     styles.line.borderTopStyle = 'solid';
