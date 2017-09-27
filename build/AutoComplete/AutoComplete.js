@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -285,39 +285,38 @@ var AutoComplete = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var _props = this.props;
-      var anchorOrigin = _props.anchorOrigin;
-      var animated = _props.animated;
-      var animation = _props.animation;
-      var dataSource = _props.dataSource;
-      var dataSourceConfig = _props.dataSourceConfig;
-      var disableFocusRipple = _props.disableFocusRipple;
-      var errorStyle = _props.errorStyle;
-      var floatingLabelText = _props.floatingLabelText;
-      var filter = _props.filter;
-      var fullWidth = _props.fullWidth;
-      var style = _props.style;
-      var hintText = _props.hintText;
-      var maxSearchResults = _props.maxSearchResults;
-      var menuCloseDelay = _props.menuCloseDelay;
-      var textFieldStyle = _props.textFieldStyle;
-      var menuStyle = _props.menuStyle;
-      var menuProps = _props.menuProps;
-      var listStyle = _props.listStyle;
-      var targetOrigin = _props.targetOrigin;
-      var triggerUpdateOnFocus = _props.triggerUpdateOnFocus;
-      var onNewRequest = _props.onNewRequest;
-      var onUpdateInput = _props.onUpdateInput;
-      var openOnFocus = _props.openOnFocus;
-      var searchTextProp = _props.searchText;
+      var _props = this.props,
+          anchorOrigin = _props.anchorOrigin,
+          animated = _props.animated,
+          animation = _props.animation,
+          dataSource = _props.dataSource,
+          dataSourceConfig = _props.dataSourceConfig,
+          disableFocusRipple = _props.disableFocusRipple,
+          errorStyle = _props.errorStyle,
+          floatingLabelText = _props.floatingLabelText,
+          filter = _props.filter,
+          fullWidth = _props.fullWidth,
+          style = _props.style,
+          hintText = _props.hintText,
+          maxSearchResults = _props.maxSearchResults,
+          menuCloseDelay = _props.menuCloseDelay,
+          textFieldStyle = _props.textFieldStyle,
+          menuStyle = _props.menuStyle,
+          menuProps = _props.menuProps,
+          listStyle = _props.listStyle,
+          targetOrigin = _props.targetOrigin,
+          triggerUpdateOnFocus = _props.triggerUpdateOnFocus,
+          onNewRequest = _props.onNewRequest,
+          onUpdateInput = _props.onUpdateInput,
+          openOnFocus = _props.openOnFocus,
+          searchTextProp = _props.searchText,
+          other = _objectWithoutProperties(_props, ['anchorOrigin', 'animated', 'animation', 'dataSource', 'dataSourceConfig', 'disableFocusRipple', 'errorStyle', 'floatingLabelText', 'filter', 'fullWidth', 'style', 'hintText', 'maxSearchResults', 'menuCloseDelay', 'textFieldStyle', 'menuStyle', 'menuProps', 'listStyle', 'targetOrigin', 'triggerUpdateOnFocus', 'onNewRequest', 'onUpdateInput', 'openOnFocus', 'searchText']);
 
-      var other = _objectWithoutProperties(_props, ['anchorOrigin', 'animated', 'animation', 'dataSource', 'dataSourceConfig', 'disableFocusRipple', 'errorStyle', 'floatingLabelText', 'filter', 'fullWidth', 'style', 'hintText', 'maxSearchResults', 'menuCloseDelay', 'textFieldStyle', 'menuStyle', 'menuProps', 'listStyle', 'targetOrigin', 'triggerUpdateOnFocus', 'onNewRequest', 'onUpdateInput', 'openOnFocus', 'searchText']);
-
-      var _state = this.state;
-      var open = _state.open;
-      var anchorEl = _state.anchorEl;
-      var searchText = _state.searchText;
-      var focusTextField = _state.focusTextField;
+      var _state = this.state,
+          open = _state.open,
+          anchorEl = _state.anchorEl,
+          searchText = _state.searchText,
+          focusTextField = _state.focusTextField;
       var prepareStyles = this.context.muiTheme.prepareStyles;
 
       var styles = getStyles(this.props, this.context, this.state);

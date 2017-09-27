@@ -59,13 +59,12 @@ var Popover = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Popover.__proto__ || Object.getPrototypeOf(Popover)).call(this, props, context));
 
     _this.renderLayer = function () {
-      var _this$props = _this.props;
-      var animated = _this$props.animated;
-      var animation = _this$props.animation;
-      var children = _this$props.children;
-      var style = _this$props.style;
-
-      var other = _objectWithoutProperties(_this$props, ['animated', 'animation', 'children', 'style']);
+      var _this$props = _this.props,
+          animated = _this$props.animated,
+          animation = _this$props.animation,
+          children = _this$props.children,
+          style = _this$props.style,
+          other = _objectWithoutProperties(_this$props, ['animated', 'animation', 'children', 'style']);
 
       var Animation = animation || _PopoverAnimationDefault2.default;
       var styleRoot = style;
@@ -107,9 +106,9 @@ var Popover = function (_Component) {
         return;
       }
 
-      var _this$props2 = _this.props;
-      var targetOrigin = _this$props2.targetOrigin;
-      var anchorOrigin = _this$props2.anchorOrigin;
+      var _this$props2 = _this.props,
+          targetOrigin = _this$props2.targetOrigin,
+          anchorOrigin = _this$props2.anchorOrigin;
 
 
       var anchor = _this.getAnchorPosition(anchorEl);
@@ -287,11 +286,9 @@ var Popover = function (_Component) {
   }, {
     key: 'applyAutoPositionIfNeeded',
     value: function applyAutoPositionIfNeeded(anchor, target, targetOrigin, anchorOrigin, targetPosition) {
-      var _getPositions = this.getPositions(anchorOrigin, targetOrigin);
-
-      var positions = _getPositions.positions;
-      var anchorPos = _getPositions.anchorPos;
-
+      var _getPositions = this.getPositions(anchorOrigin, targetOrigin),
+          positions = _getPositions.positions,
+          anchorPos = _getPositions.anchorPos;
 
       if (targetPosition.top < 0 || targetPosition.top + target.bottom > window.innerHeight) {
         var newTop = anchor[anchorPos.vertical] - target[positions.y[0]];

@@ -61,17 +61,17 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function getStyles(props, context, state) {
-  var insetChildren = props.insetChildren;
-  var leftAvatar = props.leftAvatar;
-  var leftCheckbox = props.leftCheckbox;
-  var leftIcon = props.leftIcon;
-  var nestedLevel = props.nestedLevel;
-  var rightAvatar = props.rightAvatar;
-  var rightIcon = props.rightIcon;
-  var rightIconButton = props.rightIconButton;
-  var rightToggle = props.rightToggle;
-  var secondaryText = props.secondaryText;
-  var secondaryTextLines = props.secondaryTextLines;
+  var insetChildren = props.insetChildren,
+      leftAvatar = props.leftAvatar,
+      leftCheckbox = props.leftCheckbox,
+      leftIcon = props.leftIcon,
+      nestedLevel = props.nestedLevel,
+      rightAvatar = props.rightAvatar,
+      rightIcon = props.rightIcon,
+      rightIconButton = props.rightIconButton,
+      rightToggle = props.rightToggle,
+      secondaryText = props.secondaryText,
+      secondaryTextLines = props.secondaryTextLines;
   var muiTheme = context.muiTheme;
   var listItem = muiTheme.listItem;
 
@@ -300,9 +300,9 @@ var ListItem = function (_Component) {
   }, {
     key: 'createDisabledElement',
     value: function createDisabledElement(styles, contentChildren, additionalProps) {
-      var _props = this.props;
-      var innerDivStyle = _props.innerDivStyle;
-      var style = _props.style;
+      var _props = this.props,
+          innerDivStyle = _props.innerDivStyle,
+          style = _props.style;
 
 
       var mergedDivStyles = (0, _simpleAssign2.default)({}, styles.root, styles.innerDiv, innerDivStyle, style);
@@ -318,9 +318,9 @@ var ListItem = function (_Component) {
   }, {
     key: 'createLabelElement',
     value: function createLabelElement(styles, contentChildren, additionalProps) {
-      var _props2 = this.props;
-      var innerDivStyle = _props2.innerDivStyle;
-      var style = _props2.style;
+      var _props2 = this.props,
+          innerDivStyle = _props2.innerDivStyle,
+          style = _props2.style;
 
 
       var mergedLabelStyles = (0, _simpleAssign2.default)({}, styles.root, styles.innerDiv, innerDivStyle, styles.label, style);
@@ -370,37 +370,36 @@ var ListItem = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props3 = this.props;
-      var autoGenerateNestedIndicator = _props3.autoGenerateNestedIndicator;
-      var children = _props3.children;
-      var disabled = _props3.disabled;
-      var disableKeyboardFocus = _props3.disableKeyboardFocus;
-      var initiallyOpen = _props3.initiallyOpen;
-      var innerDivStyle = _props3.innerDivStyle;
-      var insetChildren = _props3.insetChildren;
-      var leftAvatar = _props3.leftAvatar;
-      var leftCheckbox = _props3.leftCheckbox;
-      var leftIcon = _props3.leftIcon;
-      var nestedItems = _props3.nestedItems;
-      var nestedLevel = _props3.nestedLevel;
-      var nestedListStyle = _props3.nestedListStyle;
-      var onKeyboardFocus = _props3.onKeyboardFocus;
-      var onMouseEnter = _props3.onMouseEnter;
-      var onMouseLeave = _props3.onMouseLeave;
-      var onNestedListToggle = _props3.onNestedListToggle;
-      var onTouchStart = _props3.onTouchStart;
-      var onTouchTap = _props3.onTouchTap;
-      var rightAvatar = _props3.rightAvatar;
-      var rightIcon = _props3.rightIcon;
-      var rightIconButton = _props3.rightIconButton;
-      var rightToggle = _props3.rightToggle;
-      var primaryText = _props3.primaryText;
-      var primaryTogglesNestedList = _props3.primaryTogglesNestedList;
-      var secondaryText = _props3.secondaryText;
-      var secondaryTextLines = _props3.secondaryTextLines;
-      var style = _props3.style;
-
-      var other = _objectWithoutProperties(_props3, ['autoGenerateNestedIndicator', 'children', 'disabled', 'disableKeyboardFocus', 'initiallyOpen', 'innerDivStyle', 'insetChildren', 'leftAvatar', 'leftCheckbox', 'leftIcon', 'nestedItems', 'nestedLevel', 'nestedListStyle', 'onKeyboardFocus', 'onMouseEnter', 'onMouseLeave', 'onNestedListToggle', 'onTouchStart', 'onTouchTap', 'rightAvatar', 'rightIcon', 'rightIconButton', 'rightToggle', 'primaryText', 'primaryTogglesNestedList', 'secondaryText', 'secondaryTextLines', 'style']);
+      var _props3 = this.props,
+          autoGenerateNestedIndicator = _props3.autoGenerateNestedIndicator,
+          children = _props3.children,
+          disabled = _props3.disabled,
+          disableKeyboardFocus = _props3.disableKeyboardFocus,
+          initiallyOpen = _props3.initiallyOpen,
+          innerDivStyle = _props3.innerDivStyle,
+          insetChildren = _props3.insetChildren,
+          leftAvatar = _props3.leftAvatar,
+          leftCheckbox = _props3.leftCheckbox,
+          leftIcon = _props3.leftIcon,
+          nestedItems = _props3.nestedItems,
+          nestedLevel = _props3.nestedLevel,
+          nestedListStyle = _props3.nestedListStyle,
+          onKeyboardFocus = _props3.onKeyboardFocus,
+          onMouseEnter = _props3.onMouseEnter,
+          onMouseLeave = _props3.onMouseLeave,
+          onNestedListToggle = _props3.onNestedListToggle,
+          onTouchStart = _props3.onTouchStart,
+          onTouchTap = _props3.onTouchTap,
+          rightAvatar = _props3.rightAvatar,
+          rightIcon = _props3.rightIcon,
+          rightIconButton = _props3.rightIconButton,
+          rightToggle = _props3.rightToggle,
+          primaryText = _props3.primaryText,
+          primaryTogglesNestedList = _props3.primaryTogglesNestedList,
+          secondaryText = _props3.secondaryText,
+          secondaryTextLines = _props3.secondaryTextLines,
+          style = _props3.style,
+          other = _objectWithoutProperties(_props3, ['autoGenerateNestedIndicator', 'children', 'disabled', 'disableKeyboardFocus', 'initiallyOpen', 'innerDivStyle', 'insetChildren', 'leftAvatar', 'leftCheckbox', 'leftIcon', 'nestedItems', 'nestedLevel', 'nestedListStyle', 'onKeyboardFocus', 'onMouseEnter', 'onMouseLeave', 'onNestedListToggle', 'onTouchStart', 'onTouchTap', 'rightAvatar', 'rightIcon', 'rightIconButton', 'rightToggle', 'primaryText', 'primaryTogglesNestedList', 'secondaryText', 'secondaryTextLines', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

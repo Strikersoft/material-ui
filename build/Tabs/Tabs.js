@@ -166,16 +166,15 @@ var Tabs = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var _props = this.props;
-      var contentContainerClassName = _props.contentContainerClassName;
-      var contentContainerStyle = _props.contentContainerStyle;
-      var initialSelectedIndex = _props.initialSelectedIndex;
-      var inkBarStyle = _props.inkBarStyle;
-      var style = _props.style;
-      var tabItemContainerStyle = _props.tabItemContainerStyle;
-      var tabTemplate = _props.tabTemplate;
-
-      var other = _objectWithoutProperties(_props, ['contentContainerClassName', 'contentContainerStyle', 'initialSelectedIndex', 'inkBarStyle', 'style', 'tabItemContainerStyle', 'tabTemplate']);
+      var _props = this.props,
+          contentContainerClassName = _props.contentContainerClassName,
+          contentContainerStyle = _props.contentContainerStyle,
+          initialSelectedIndex = _props.initialSelectedIndex,
+          inkBarStyle = _props.inkBarStyle,
+          style = _props.style,
+          tabItemContainerStyle = _props.tabItemContainerStyle,
+          tabTemplate = _props.tabTemplate,
+          other = _objectWithoutProperties(_props, ['contentContainerClassName', 'contentContainerStyle', 'initialSelectedIndex', 'inkBarStyle', 'style', 'tabItemContainerStyle', 'tabTemplate']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

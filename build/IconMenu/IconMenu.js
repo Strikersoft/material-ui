@@ -65,12 +65,10 @@ var IconMenu = function (_Component) {
       open: false
     }, _this.handleItemTouchTap = function (event, child) {
       if (_this.props.touchTapCloseDelay !== 0 && !child.props.hasOwnProperty('menuItems')) {
-        (function () {
-          var isKeyboard = _events2.default.isKeyboard(event);
-          _this.timerCloseId = setTimeout(function () {
-            _this.close(isKeyboard ? 'enter' : 'itemTap', isKeyboard);
-          }, _this.props.touchTapCloseDelay);
-        })();
+        var isKeyboard = _events2.default.isKeyboard(event);
+        _this.timerCloseId = setTimeout(function () {
+          _this.close(isKeyboard ? 'enter' : 'itemTap', isKeyboard);
+        }, _this.props.touchTapCloseDelay);
       }
 
       _this.props.onItemTouchTap(event, child);
@@ -148,33 +146,32 @@ var IconMenu = function (_Component) {
     value: function render() {
       var _this3 = this;
 
-      var _props = this.props;
-      var anchorOrigin = _props.anchorOrigin;
-      var className = _props.className;
-      var animated = _props.animated;
-      var animation = _props.animation;
-      var iconButtonElement = _props.iconButtonElement;
-      var iconStyle = _props.iconStyle;
-      var onItemTouchTap = _props.onItemTouchTap;
-      var onKeyboardFocus = _props.onKeyboardFocus;
-      var onMouseDown = _props.onMouseDown;
-      var onMouseLeave = _props.onMouseLeave;
-      var onMouseEnter = _props.onMouseEnter;
-      var onMouseUp = _props.onMouseUp;
-      var onRequestChange = _props.onRequestChange;
-      var onTouchTap = _props.onTouchTap;
-      var menuStyle = _props.menuStyle;
-      var style = _props.style;
-      var targetOrigin = _props.targetOrigin;
-      var touchTapCloseDelay = _props.touchTapCloseDelay;
-      var useLayerForClickAway = _props.useLayerForClickAway;
-
-      var other = _objectWithoutProperties(_props, ['anchorOrigin', 'className', 'animated', 'animation', 'iconButtonElement', 'iconStyle', 'onItemTouchTap', 'onKeyboardFocus', 'onMouseDown', 'onMouseLeave', 'onMouseEnter', 'onMouseUp', 'onRequestChange', 'onTouchTap', 'menuStyle', 'style', 'targetOrigin', 'touchTapCloseDelay', 'useLayerForClickAway']);
+      var _props = this.props,
+          anchorOrigin = _props.anchorOrigin,
+          className = _props.className,
+          animated = _props.animated,
+          animation = _props.animation,
+          iconButtonElement = _props.iconButtonElement,
+          iconStyle = _props.iconStyle,
+          onItemTouchTap = _props.onItemTouchTap,
+          onKeyboardFocus = _props.onKeyboardFocus,
+          onMouseDown = _props.onMouseDown,
+          onMouseLeave = _props.onMouseLeave,
+          onMouseEnter = _props.onMouseEnter,
+          onMouseUp = _props.onMouseUp,
+          onRequestChange = _props.onRequestChange,
+          onTouchTap = _props.onTouchTap,
+          menuStyle = _props.menuStyle,
+          style = _props.style,
+          targetOrigin = _props.targetOrigin,
+          touchTapCloseDelay = _props.touchTapCloseDelay,
+          useLayerForClickAway = _props.useLayerForClickAway,
+          other = _objectWithoutProperties(_props, ['anchorOrigin', 'className', 'animated', 'animation', 'iconButtonElement', 'iconStyle', 'onItemTouchTap', 'onKeyboardFocus', 'onMouseDown', 'onMouseLeave', 'onMouseEnter', 'onMouseUp', 'onRequestChange', 'onTouchTap', 'menuStyle', 'style', 'targetOrigin', 'touchTapCloseDelay', 'useLayerForClickAway']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
-      var _state = this.state;
-      var open = _state.open;
-      var anchorEl = _state.anchorEl;
+      var _state = this.state,
+          open = _state.open,
+          anchorEl = _state.anchorEl;
 
 
       var styles = {

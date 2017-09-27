@@ -42,10 +42,9 @@ var contextTypes = {
 };
 
 var Divider = function Divider(props, context) {
-  var inset = props.inset;
-  var style = props.style;
-
-  var other = _objectWithoutProperties(props, ['inset', 'style']);
+  var inset = props.inset,
+      style = props.style,
+      other = _objectWithoutProperties(props, ['inset', 'style']);
 
   var muiTheme = context.muiTheme;
   var prepareStyles = muiTheme.prepareStyles;

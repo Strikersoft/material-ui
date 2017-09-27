@@ -308,15 +308,15 @@ var Calendar = function (_Component) {
 
       var weekTitleDayStyle = prepareStyles(styles.weekTitleDay);
 
-      var _props = this.props;
-      var cancelLabel = _props.cancelLabel;
-      var DateTimeFormat = _props.DateTimeFormat;
-      var firstDayOfWeek = _props.firstDayOfWeek;
-      var locale = _props.locale;
-      var okLabel = _props.okLabel;
-      var onTouchTapCancel = _props.onTouchTapCancel;
-      var onTouchTapOk = _props.onTouchTapOk;
-      var wordings = _props.wordings;
+      var _props = this.props,
+          cancelLabel = _props.cancelLabel,
+          DateTimeFormat = _props.DateTimeFormat,
+          firstDayOfWeek = _props.firstDayOfWeek,
+          locale = _props.locale,
+          okLabel = _props.okLabel,
+          onTouchTapCancel = _props.onTouchTapCancel,
+          onTouchTapOk = _props.onTouchTapOk,
+          wordings = _props.wordings;
 
 
       return _react2.default.createElement(

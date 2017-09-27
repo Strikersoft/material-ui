@@ -58,20 +58,19 @@ var SvgIcon = function (_Component) {
   _createClass(SvgIcon, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var children = _props.children;
-      var color = _props.color;
-      var hoverColor = _props.hoverColor;
-      var onMouseEnter = _props.onMouseEnter;
-      var onMouseLeave = _props.onMouseLeave;
-      var style = _props.style;
-      var viewBox = _props.viewBox;
+      var _props = this.props,
+          children = _props.children,
+          color = _props.color,
+          hoverColor = _props.hoverColor,
+          onMouseEnter = _props.onMouseEnter,
+          onMouseLeave = _props.onMouseLeave,
+          style = _props.style,
+          viewBox = _props.viewBox,
+          other = _objectWithoutProperties(_props, ['children', 'color', 'hoverColor', 'onMouseEnter', 'onMouseLeave', 'style', 'viewBox']);
 
-      var other = _objectWithoutProperties(_props, ['children', 'color', 'hoverColor', 'onMouseEnter', 'onMouseLeave', 'style', 'viewBox']);
-
-      var _context$muiTheme = this.context.muiTheme;
-      var svgIcon = _context$muiTheme.svgIcon;
-      var prepareStyles = _context$muiTheme.prepareStyles;
+      var _context$muiTheme = this.context.muiTheme,
+          svgIcon = _context$muiTheme.svgIcon,
+          prepareStyles = _context$muiTheme.prepareStyles;
 
 
       var offColor = color ? color : 'currentColor';

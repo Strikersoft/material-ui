@@ -28,9 +28,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function getStyles(props, context) {
   var noGutter = props.noGutter;
-  var _context$muiTheme = context.muiTheme;
-  var baseTheme = _context$muiTheme.baseTheme;
-  var toolbar = _context$muiTheme.toolbar;
+  var _context$muiTheme = context.muiTheme,
+      baseTheme = _context$muiTheme.baseTheme,
+      toolbar = _context$muiTheme.toolbar;
 
 
   return {
@@ -58,13 +58,12 @@ var Toolbar = function (_Component) {
   _createClass(Toolbar, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var children = _props.children;
-      var className = _props.className;
-      var noGutter = _props.noGutter;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['children', 'className', 'noGutter', 'style']);
+      var _props = this.props,
+          children = _props.children,
+          className = _props.className,
+          noGutter = _props.noGutter,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['children', 'className', 'noGutter', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

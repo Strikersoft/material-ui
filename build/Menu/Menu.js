@@ -71,12 +71,12 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function getStyles(props, context) {
-  var animated = props.animated;
-  var desktop = props.desktop;
-  var maxHeight = props.maxHeight;
-  var _props$openDirection = props.openDirection;
-  var openDirection = _props$openDirection === undefined ? 'bottom-left' : _props$openDirection;
-  var width = props.width;
+  var animated = props.animated,
+      desktop = props.desktop,
+      maxHeight = props.maxHeight,
+      _props$openDirection = props.openDirection,
+      openDirection = _props$openDirection === undefined ? 'bottom-left' : _props$openDirection,
+      width = props.width;
 
 
   var openDown = openDirection.split('-')[0] === 'bottom';
@@ -227,9 +227,9 @@ var Menu = function (_Component) {
     value: function cloneMenuItem(child, childIndex, styles, index) {
       var _this2 = this;
 
-      var _props = this.props;
-      var desktop = _props.desktop;
-      var selectedMenuItemStyle = _props.selectedMenuItemStyle;
+      var _props = this.props,
+          desktop = _props.desktop,
+          selectedMenuItemStyle = _props.selectedMenuItemStyle;
 
 
       var selected = this.isChildSelected(child, this.props);
@@ -271,9 +271,9 @@ var Menu = function (_Component) {
   }, {
     key: 'getCascadeChildrenCount',
     value: function getCascadeChildrenCount(filteredChildren) {
-      var _props2 = this.props;
-      var desktop = _props2.desktop;
-      var maxHeight = _props2.maxHeight;
+      var _props2 = this.props,
+          desktop = _props2.desktop,
+          maxHeight = _props2.maxHeight;
 
       var count = 1;
       var currentHeight = desktop ? 16 : 8;
@@ -357,9 +357,8 @@ var Menu = function (_Component) {
       if (multiple) {
         var itemIndex = menuValue.indexOf(itemValue);
 
-        var _menuValue = _toArray(menuValue);
-
-        var newMenuValue = _menuValue;
+        var _menuValue = _toArray(menuValue),
+            newMenuValue = _menuValue.slice(0);
 
         if (itemIndex === -1) {
           newMenuValue.push(itemValue);
@@ -446,28 +445,27 @@ var Menu = function (_Component) {
     value: function render() {
       var _this4 = this;
 
-      var _props3 = this.props;
-      var animated = _props3.animated;
-      var autoWidth = _props3.autoWidth;
-      var children = _props3.children;
-      var desktop = _props3.desktop;
-      var disableAutoFocus = _props3.disableAutoFocus;
-      var initiallyKeyboardFocused = _props3.initiallyKeyboardFocused;
-      var listStyle = _props3.listStyle;
-      var maxHeight = _props3.maxHeight;
-      var multiple = _props3.multiple;
-      var _props3$openDirection = _props3.openDirection;
-      var openDirection = _props3$openDirection === undefined ? 'bottom-left' : _props3$openDirection;
-      var onItemTouchTap = _props3.onItemTouchTap;
-      var onEscKeyDown = _props3.onEscKeyDown;
-      var selectedMenuItemStyle = _props3.selectedMenuItemStyle;
-      var style = _props3.style;
-      var value = _props3.value;
-      var valueLink = _props3.valueLink;
-      var width = _props3.width;
-      var zDepth = _props3.zDepth;
-
-      var other = _objectWithoutProperties(_props3, ['animated', 'autoWidth', 'children', 'desktop', 'disableAutoFocus', 'initiallyKeyboardFocused', 'listStyle', 'maxHeight', 'multiple', 'openDirection', 'onItemTouchTap', 'onEscKeyDown', 'selectedMenuItemStyle', 'style', 'value', 'valueLink', 'width', 'zDepth']);
+      var _props3 = this.props,
+          animated = _props3.animated,
+          autoWidth = _props3.autoWidth,
+          children = _props3.children,
+          desktop = _props3.desktop,
+          disableAutoFocus = _props3.disableAutoFocus,
+          initiallyKeyboardFocused = _props3.initiallyKeyboardFocused,
+          listStyle = _props3.listStyle,
+          maxHeight = _props3.maxHeight,
+          multiple = _props3.multiple,
+          _props3$openDirection = _props3.openDirection,
+          openDirection = _props3$openDirection === undefined ? 'bottom-left' : _props3$openDirection,
+          onItemTouchTap = _props3.onItemTouchTap,
+          onEscKeyDown = _props3.onEscKeyDown,
+          selectedMenuItemStyle = _props3.selectedMenuItemStyle,
+          style = _props3.style,
+          value = _props3.value,
+          valueLink = _props3.valueLink,
+          width = _props3.width,
+          zDepth = _props3.zDepth,
+          other = _objectWithoutProperties(_props3, ['animated', 'autoWidth', 'children', 'desktop', 'disableAutoFocus', 'initiallyKeyboardFocused', 'listStyle', 'maxHeight', 'multiple', 'openDirection', 'onItemTouchTap', 'onEscKeyDown', 'selectedMenuItemStyle', 'style', 'value', 'valueLink', 'width', 'zDepth']);
 
       process.env.NODE_ENV !== "production" ? (0, _warning2.default)(typeof zDepth === 'undefined', 'Menu no longer supports `zDepth`. Instead, wrap it in `Paper` ' + 'or another component that provides `zDepth`. It will be removed with v0.16.0.') : void 0;
 

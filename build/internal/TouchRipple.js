@@ -44,9 +44,8 @@ function _toArray(arr) { return Array.isArray(arr) ? arr : Array.from(arr); }
 
 // Remove the first element of the array
 var shift = function shift(_ref) {
-  var _ref2 = _toArray(_ref);
-
-  var newArray = _ref2.slice(1);
+  var _ref2 = _toArray(_ref),
+      newArray = _ref2.slice(1);
 
   return newArray;
 };
@@ -228,12 +227,12 @@ var TouchRipple = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var children = _props.children;
-      var style = _props.style;
-      var _state = this.state;
-      var hasRipples = _state.hasRipples;
-      var ripples = _state.ripples;
+      var _props = this.props,
+          children = _props.children,
+          style = _props.style;
+      var _state = this.state,
+          hasRipples = _state.hasRipples,
+          ripples = _state.ripples;
       var prepareStyles = this.context.muiTheme.prepareStyles;
 
 

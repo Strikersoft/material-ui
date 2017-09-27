@@ -143,9 +143,9 @@ var Clock = function (_Component) {
     value: function render() {
       var clock = null;
 
-      var _context$muiTheme = this.context.muiTheme;
-      var prepareStyles = _context$muiTheme.prepareStyles;
-      var timePicker = _context$muiTheme.timePicker;
+      var _context$muiTheme = this.context.muiTheme,
+          prepareStyles = _context$muiTheme.prepareStyles,
+          timePicker = _context$muiTheme.timePicker;
 
 
       var styles = {

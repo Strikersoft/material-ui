@@ -4,8 +4,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-
 exports.default = function (muiTheme) {
   var userAgent = muiTheme.userAgent;
 
@@ -28,19 +26,13 @@ exports.default = function (muiTheme) {
       return _inlineStylePrefixer2.default.prefixAll(style);
     };
   } else {
-    var _ret = function () {
-      var prefixer = new _inlineStylePrefixer2.default({
-        userAgent: userAgent
-      });
+    var prefixer = new _inlineStylePrefixer2.default({
+      userAgent: userAgent
+    });
 
-      return {
-        v: function v(style) {
-          return prefixer.prefix(style);
-        }
-      };
-    }();
-
-    if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
+    return function (style) {
+      return prefixer.prefix(style);
+    };
   }
 };
 

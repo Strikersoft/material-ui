@@ -110,14 +110,13 @@ var CircleRipple = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var aborted = _props.aborted;
-      var color = _props.color;
-      var opacity = _props.opacity;
-      var style = _props.style;
-      var touchGenerated = _props.touchGenerated;
-
-      var other = _objectWithoutProperties(_props, ['aborted', 'color', 'opacity', 'style', 'touchGenerated']);
+      var _props = this.props,
+          aborted = _props.aborted,
+          color = _props.color,
+          opacity = _props.opacity,
+          style = _props.style,
+          touchGenerated = _props.touchGenerated,
+          other = _objectWithoutProperties(_props, ['aborted', 'color', 'opacity', 'style', 'touchGenerated']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

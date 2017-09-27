@@ -43,13 +43,11 @@ exports.default = {
   prepareStyles: function prepareStyles() {
     warn();
 
-    var _ref = this.state && this.state.muiTheme || this.context && this.context.muiTheme || this.props && this.props.muiTheme || {};
-
-    var _ref$prepareStyles = _ref.prepareStyles;
-    var prepareStyles = _ref$prepareStyles === undefined ? function (style) {
+    var _ref = this.state && this.state.muiTheme || this.context && this.context.muiTheme || this.props && this.props.muiTheme || {},
+        _ref$prepareStyles = _ref.prepareStyles,
+        prepareStyles = _ref$prepareStyles === undefined ? function (style) {
       return style;
     } : _ref$prepareStyles;
-
 
     return prepareStyles(mergeStyles.apply(undefined, arguments));
   },

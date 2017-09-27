@@ -42,15 +42,14 @@ var contextTypes = {
 };
 
 var Subheader = function Subheader(props, context) {
-  var children = props.children;
-  var inset = props.inset;
-  var style = props.style;
+  var children = props.children,
+      inset = props.inset,
+      style = props.style,
+      other = _objectWithoutProperties(props, ['children', 'inset', 'style']);
 
-  var other = _objectWithoutProperties(props, ['children', 'inset', 'style']);
-
-  var _context$muiTheme = context.muiTheme;
-  var prepareStyles = _context$muiTheme.prepareStyles;
-  var subheader = _context$muiTheme.subheader;
+  var _context$muiTheme = context.muiTheme,
+      prepareStyles = _context$muiTheme.prepareStyles,
+      subheader = _context$muiTheme.subheader;
 
 
   var styles = {

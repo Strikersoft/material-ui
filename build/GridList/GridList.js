@@ -52,14 +52,13 @@ var GridList = function (_Component) {
   _createClass(GridList, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var cols = _props.cols;
-      var padding = _props.padding;
-      var cellHeight = _props.cellHeight;
-      var children = _props.children;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['cols', 'padding', 'cellHeight', 'children', 'style']);
+      var _props = this.props,
+          cols = _props.cols,
+          padding = _props.padding,
+          cellHeight = _props.cellHeight,
+          children = _props.children,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['cols', 'padding', 'cellHeight', 'children', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

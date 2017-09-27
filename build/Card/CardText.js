@@ -51,14 +51,13 @@ var CardText = function (_Component) {
   _createClass(CardText, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var actAsExpander = _props.actAsExpander;
-      var children = _props.children;
-      var color = _props.color;
-      var expandable = _props.expandable;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['actAsExpander', 'children', 'color', 'expandable', 'style']);
+      var _props = this.props,
+          actAsExpander = _props.actAsExpander,
+          children = _props.children,
+          color = _props.color,
+          expandable = _props.expandable,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['actAsExpander', 'children', 'color', 'expandable', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

@@ -40,9 +40,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function getStyles(props, context, state) {
   var disabled = props.disabled;
-  var _context$muiTheme = context.muiTheme;
-  var baseTheme = _context$muiTheme.baseTheme;
-  var toggle = _context$muiTheme.toggle;
+  var _context$muiTheme = context.muiTheme,
+      baseTheme = _context$muiTheme.baseTheme,
+      toggle = _context$muiTheme.toggle;
 
 
   var toggleSize = 20;
@@ -133,10 +133,10 @@ var Toggle = function (_Component) {
   _createClass(Toggle, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
-      var _props = this.props;
-      var toggled = _props.toggled;
-      var defaultToggled = _props.defaultToggled;
-      var valueLink = _props.valueLink;
+      var _props = this.props,
+          toggled = _props.toggled,
+          defaultToggled = _props.defaultToggled,
+          valueLink = _props.valueLink;
 
 
       if (toggled || defaultToggled || valueLink && valueLink.value) {
@@ -158,13 +158,12 @@ var Toggle = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props2 = this.props;
-      var defaultToggled = _props2.defaultToggled;
-      var elementStyle = _props2.elementStyle;
-      var onToggle = _props2.onToggle;
-      var toggled = _props2.toggled;
-
-      var other = _objectWithoutProperties(_props2, ['defaultToggled', 'elementStyle', 'onToggle', 'toggled']);
+      var _props2 = this.props,
+          defaultToggled = _props2.defaultToggled,
+          elementStyle = _props2.elementStyle,
+          onToggle = _props2.onToggle,
+          toggled = _props2.toggled,
+          other = _objectWithoutProperties(_props2, ['defaultToggled', 'elementStyle', 'onToggle', 'toggled']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

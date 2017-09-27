@@ -33,13 +33,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function getStyles(props, context, state) {
-  var date = props.date;
-  var disabled = props.disabled;
-  var selected = props.selected;
+  var date = props.date,
+      disabled = props.disabled,
+      selected = props.selected;
   var hover = state.hover;
-  var _context$muiTheme = context.muiTheme;
-  var baseTheme = _context$muiTheme.baseTheme;
-  var datePicker = _context$muiTheme.datePicker;
+  var _context$muiTheme = context.muiTheme,
+      baseTheme = _context$muiTheme.baseTheme,
+      datePicker = _context$muiTheme.datePicker;
 
 
   var labelColor = baseTheme.palette.textColor;
@@ -116,12 +116,11 @@ var DayButton = function (_Component) {
   _createClass(DayButton, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var date = _props.date;
-      var onTouchTap = _props.onTouchTap;
-      var selected = _props.selected;
-
-      var other = _objectWithoutProperties(_props, ['date', 'onTouchTap', 'selected']);
+      var _props = this.props,
+          date = _props.date,
+          onTouchTap = _props.onTouchTap,
+          selected = _props.selected,
+          other = _objectWithoutProperties(_props, ['date', 'onTouchTap', 'selected']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

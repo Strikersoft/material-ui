@@ -186,16 +186,15 @@ var Chip = function (_Component) {
 
       var styles = getStyles(this.props, this.context, this.state);
 
-      var _props = this.props;
-      var children = _props.children;
-      var style = _props.style;
-      var className = _props.className;
-      var labelStyle = _props.labelStyle;
-      var labelColor = _props.labelColor;
-      var backgroundColor = _props.backgroundColor;
-      var onRequestDelete = _props.onRequestDelete;
-
-      var other = _objectWithoutProperties(_props, ['children', 'style', 'className', 'labelStyle', 'labelColor', 'backgroundColor', 'onRequestDelete']);
+      var _props = this.props,
+          children = _props.children,
+          style = _props.style,
+          className = _props.className,
+          labelStyle = _props.labelStyle,
+          labelColor = _props.labelColor,
+          backgroundColor = _props.backgroundColor,
+          onRequestDelete = _props.onRequestDelete,
+          other = _objectWithoutProperties(_props, ['children', 'style', 'className', 'labelStyle', 'labelColor', 'backgroundColor', 'onRequestDelete']);
 
       var deletable = this.props.onRequestDelete;
       var avatar = null;

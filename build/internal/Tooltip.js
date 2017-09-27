@@ -37,10 +37,10 @@ function getStyles(props, context, state) {
   var touchOffsetTop = props.touch ? -20 : -10;
   var offset = verticalPosition === 'bottom' ? 14 + touchMarginOffset : -14 - touchMarginOffset;
 
-  var _context$muiTheme = context.muiTheme;
-  var baseTheme = _context$muiTheme.baseTheme;
-  var zIndex = _context$muiTheme.zIndex;
-  var tooltip = _context$muiTheme.tooltip;
+  var _context$muiTheme = context.muiTheme,
+      baseTheme = _context$muiTheme.baseTheme,
+      zIndex = _context$muiTheme.zIndex,
+      tooltip = _context$muiTheme.tooltip;
 
 
   var styles = {
@@ -154,14 +154,13 @@ var Tooltip = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var horizontalPosition = _props.horizontalPosition;
-      var label = _props.label;
-      var show = _props.show;
-      var touch = _props.touch;
-      var verticalPosition = _props.verticalPosition;
-
-      var other = _objectWithoutProperties(_props, ['horizontalPosition', 'label', 'show', 'touch', 'verticalPosition']);
+      var _props = this.props,
+          horizontalPosition = _props.horizontalPosition,
+          label = _props.label,
+          show = _props.show,
+          touch = _props.touch,
+          verticalPosition = _props.verticalPosition,
+          other = _objectWithoutProperties(_props, ['horizontalPosition', 'label', 'show', 'touch', 'verticalPosition']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

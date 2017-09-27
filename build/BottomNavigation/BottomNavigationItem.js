@@ -55,11 +55,10 @@ function getStyles(props, context) {
 }
 
 var BottomNavigationItem = function BottomNavigationItem(props, context) {
-  var label = props.label;
-  var icon = props.icon;
-  var style = props.style;
-
-  var other = _objectWithoutProperties(props, ['label', 'icon', 'style']);
+  var label = props.label,
+      icon = props.icon,
+      style = props.style,
+      other = _objectWithoutProperties(props, ['label', 'icon', 'style']);
 
   var prepareStyles = context.muiTheme.prepareStyles;
 

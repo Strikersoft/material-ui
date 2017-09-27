@@ -44,9 +44,9 @@ var isLabel = function isLabel(child) {
 
 var getStyles = function getStyles(props, context, state) {
   var hovered = state.hovered;
-  var _context$muiTheme$ste = context.muiTheme.stepper;
-  var backgroundColor = _context$muiTheme$ste.backgroundColor;
-  var hoverBackgroundColor = _context$muiTheme$ste.hoverBackgroundColor;
+  var _context$muiTheme$ste = context.muiTheme.stepper,
+      backgroundColor = _context$muiTheme$ste.backgroundColor,
+      hoverBackgroundColor = _context$muiTheme$ste.hoverBackgroundColor;
 
 
   var styles = {
@@ -113,19 +113,18 @@ var StepButton = function (_Component) {
   _createClass(StepButton, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var active = _props.active;
-      var children = _props.children;
-      var completed = _props.completed;
-      var disabled = _props.disabled;
-      var icon = _props.icon;
-      var last = _props.last;
-      var onMouseEnter = _props.onMouseEnter;
-      var onMouseLeave = _props.onMouseLeave;
-      var onTouchStart = _props.onTouchStart;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['active', 'children', 'completed', 'disabled', 'icon', 'last', 'onMouseEnter', 'onMouseLeave', 'onTouchStart', 'style']);
+      var _props = this.props,
+          active = _props.active,
+          children = _props.children,
+          completed = _props.completed,
+          disabled = _props.disabled,
+          icon = _props.icon,
+          last = _props.last,
+          onMouseEnter = _props.onMouseEnter,
+          onMouseLeave = _props.onMouseLeave,
+          onTouchStart = _props.onTouchStart,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['active', 'children', 'completed', 'disabled', 'icon', 'last', 'onMouseEnter', 'onMouseLeave', 'onTouchStart', 'style']);
 
       var styles = getStyles(this.props, this.context, this.state);
 

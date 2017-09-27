@@ -78,20 +78,19 @@ var TimeDisplay = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var affix = _props.affix;
-      var format = _props.format;
-      var mode = _props.mode;
-      var onSelectAffix = _props.onSelectAffix;
-      var onSelectHour = _props.onSelectHour;
-      var onSelectMin = _props.onSelectMin;
-      var selectedTime = _props.selectedTime;
+      var _props = this.props,
+          affix = _props.affix,
+          format = _props.format,
+          mode = _props.mode,
+          onSelectAffix = _props.onSelectAffix,
+          onSelectHour = _props.onSelectHour,
+          onSelectMin = _props.onSelectMin,
+          selectedTime = _props.selectedTime,
+          other = _objectWithoutProperties(_props, ['affix', 'format', 'mode', 'onSelectAffix', 'onSelectHour', 'onSelectMin', 'selectedTime']);
 
-      var other = _objectWithoutProperties(_props, ['affix', 'format', 'mode', 'onSelectAffix', 'onSelectHour', 'onSelectMin', 'selectedTime']);
-
-      var _context$muiTheme = this.context.muiTheme;
-      var prepareStyles = _context$muiTheme.prepareStyles;
-      var timePicker = _context$muiTheme.timePicker;
+      var _context$muiTheme = this.context.muiTheme,
+          prepareStyles = _context$muiTheme.prepareStyles,
+          timePicker = _context$muiTheme.timePicker;
 
 
       var styles = {
@@ -134,13 +133,10 @@ var TimeDisplay = function (_Component) {
         }
       };
 
-      var _sanitizeTime = this.sanitizeTime();
-
-      var _sanitizeTime2 = _slicedToArray(_sanitizeTime, 2);
-
-      var hour = _sanitizeTime2[0];
-      var min = _sanitizeTime2[1];
-
+      var _sanitizeTime = this.sanitizeTime(),
+          _sanitizeTime2 = _slicedToArray(_sanitizeTime, 2),
+          hour = _sanitizeTime2[0],
+          min = _sanitizeTime2[1];
 
       var buttons = [];
       if (format === 'ampm') {

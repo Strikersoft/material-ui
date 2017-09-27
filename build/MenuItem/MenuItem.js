@@ -183,23 +183,22 @@ var MenuItem = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var checked = _props.checked;
-      var children = _props.children;
-      var desktop = _props.desktop;
-      var disabled = _props.disabled;
-      var focusState = _props.focusState;
-      var innerDivStyle = _props.innerDivStyle;
-      var insetChildren = _props.insetChildren;
-      var leftIcon = _props.leftIcon;
-      var menuItems = _props.menuItems;
-      var rightIcon = _props.rightIcon;
-      var secondaryText = _props.secondaryText;
-      var style = _props.style;
-      var animation = _props.animation;
-      var value = _props.value;
-
-      var other = _objectWithoutProperties(_props, ['checked', 'children', 'desktop', 'disabled', 'focusState', 'innerDivStyle', 'insetChildren', 'leftIcon', 'menuItems', 'rightIcon', 'secondaryText', 'style', 'animation', 'value']);
+      var _props = this.props,
+          checked = _props.checked,
+          children = _props.children,
+          desktop = _props.desktop,
+          disabled = _props.disabled,
+          focusState = _props.focusState,
+          innerDivStyle = _props.innerDivStyle,
+          insetChildren = _props.insetChildren,
+          leftIcon = _props.leftIcon,
+          menuItems = _props.menuItems,
+          rightIcon = _props.rightIcon,
+          secondaryText = _props.secondaryText,
+          style = _props.style,
+          animation = _props.animation,
+          value = _props.value,
+          other = _objectWithoutProperties(_props, ['checked', 'children', 'desktop', 'disabled', 'focusState', 'innerDivStyle', 'insetChildren', 'leftIcon', 'menuItems', 'rightIcon', 'secondaryText', 'style', 'animation', 'value']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

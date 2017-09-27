@@ -46,10 +46,10 @@ var ExpandTransition = function (_Component) {
   _createClass(ExpandTransition, [{
     key: 'renderChildren',
     value: function renderChildren(children) {
-      var _props = this.props;
-      var enterDelay = _props.enterDelay;
-      var transitionDelay = _props.transitionDelay;
-      var transitionDuration = _props.transitionDuration;
+      var _props = this.props,
+          enterDelay = _props.enterDelay,
+          transitionDelay = _props.transitionDelay,
+          transitionDuration = _props.transitionDuration;
 
       return _react2.default.Children.map(children, function (child) {
         return _react2.default.createElement(
@@ -67,16 +67,15 @@ var ExpandTransition = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props2 = this.props;
-      var children = _props2.children;
-      var enterDelay = _props2.enterDelay;
-      var loading = _props2.loading;
-      var open = _props2.open;
-      var style = _props2.style;
-      var transitionDelay = _props2.transitionDelay;
-      var transitionDuration = _props2.transitionDuration;
-
-      var other = _objectWithoutProperties(_props2, ['children', 'enterDelay', 'loading', 'open', 'style', 'transitionDelay', 'transitionDuration']);
+      var _props2 = this.props,
+          children = _props2.children,
+          enterDelay = _props2.enterDelay,
+          loading = _props2.loading,
+          open = _props2.open,
+          style = _props2.style,
+          transitionDelay = _props2.transitionDelay,
+          transitionDuration = _props2.transitionDuration,
+          other = _objectWithoutProperties(_props2, ['children', 'enterDelay', 'loading', 'open', 'style', 'transitionDelay', 'transitionDuration']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

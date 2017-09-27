@@ -68,20 +68,19 @@ var StepContent = function (_Component) {
   _createClass(StepContent, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var active = _props.active;
-      var children = _props.children;
-      var completed = _props.completed;
-      var last = _props.last;
-      var style = _props.style;
-      var transition = _props.transition;
-      var transitionDuration = _props.transitionDuration;
+      var _props = this.props,
+          active = _props.active,
+          children = _props.children,
+          completed = _props.completed,
+          last = _props.last,
+          style = _props.style,
+          transition = _props.transition,
+          transitionDuration = _props.transitionDuration,
+          other = _objectWithoutProperties(_props, ['active', 'children', 'completed', 'last', 'style', 'transition', 'transitionDuration']);
 
-      var other = _objectWithoutProperties(_props, ['active', 'children', 'completed', 'last', 'style', 'transition', 'transitionDuration']);
-
-      var _context = this.context;
-      var stepper = _context.stepper;
-      var prepareStyles = _context.muiTheme.prepareStyles;
+      var _context = this.context,
+          stepper = _context.stepper,
+          prepareStyles = _context.muiTheme.prepareStyles;
 
 
       if (stepper.orientation !== 'vertical') {

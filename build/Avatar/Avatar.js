@@ -27,9 +27,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function getStyles(props, context) {
-  var backgroundColor = props.backgroundColor;
-  var color = props.color;
-  var size = props.size;
+  var backgroundColor = props.backgroundColor,
+      color = props.color,
+      size = props.size;
   var avatar = context.muiTheme.avatar;
 
 
@@ -70,14 +70,13 @@ var Avatar = function (_Component) {
   _createClass(Avatar, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var backgroundColor = _props.backgroundColor;
-      var icon = _props.icon;
-      var src = _props.src;
-      var style = _props.style;
-      var className = _props.className;
-
-      var other = _objectWithoutProperties(_props, ['backgroundColor', 'icon', 'src', 'style', 'className']);
+      var _props = this.props,
+          backgroundColor = _props.backgroundColor,
+          icon = _props.icon,
+          src = _props.src,
+          style = _props.style,
+          className = _props.className,
+          other = _objectWithoutProperties(_props, ['backgroundColor', 'icon', 'src', 'style', 'className']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

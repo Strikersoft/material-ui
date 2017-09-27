@@ -39,9 +39,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function getStyles(props, context, state) {
-  var _context$muiTheme = context.muiTheme;
-  var desktopSubheaderHeight = _context$muiTheme.baseTheme.spacing.desktopSubheaderHeight;
-  var zIndex = _context$muiTheme.zIndex;
+  var _context$muiTheme = context.muiTheme,
+      desktopSubheaderHeight = _context$muiTheme.baseTheme.spacing.desktopSubheaderHeight,
+      zIndex = _context$muiTheme.zIndex;
   var open = state.open;
 
 
@@ -190,20 +190,19 @@ var Snackbar = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var autoHideDuration = _props.autoHideDuration;
-      var messageProp = _props.message;
-      var onRequestClose = _props.onRequestClose;
-      var onActionTouchTap = _props.onActionTouchTap;
-      var style = _props.style;
-      var bodyStyle = _props.bodyStyle;
+      var _props = this.props,
+          autoHideDuration = _props.autoHideDuration,
+          messageProp = _props.message,
+          onRequestClose = _props.onRequestClose,
+          onActionTouchTap = _props.onActionTouchTap,
+          style = _props.style,
+          bodyStyle = _props.bodyStyle,
+          other = _objectWithoutProperties(_props, ['autoHideDuration', 'message', 'onRequestClose', 'onActionTouchTap', 'style', 'bodyStyle']);
 
-      var other = _objectWithoutProperties(_props, ['autoHideDuration', 'message', 'onRequestClose', 'onActionTouchTap', 'style', 'bodyStyle']);
-
-      var _state = this.state;
-      var action = _state.action;
-      var message = _state.message;
-      var open = _state.open;
+      var _state = this.state,
+          action = _state.action,
+          message = _state.message,
+          open = _state.open;
       var prepareStyles = this.context.muiTheme.prepareStyles;
 
       var styles = getStyles(this.props, this.context, this.state);

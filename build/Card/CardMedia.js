@@ -75,18 +75,17 @@ var CardMedia = function (_Component) {
   _createClass(CardMedia, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var actAsExpander = _props.actAsExpander;
-      var children = _props.children;
-      var expandable = _props.expandable;
-      var mediaStyle = _props.mediaStyle;
-      var overlay = _props.overlay;
-      var overlayContainerStyle = _props.overlayContainerStyle;
-      var overlayContentStyle = _props.overlayContentStyle;
-      var overlayStyle = _props.overlayStyle;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['actAsExpander', 'children', 'expandable', 'mediaStyle', 'overlay', 'overlayContainerStyle', 'overlayContentStyle', 'overlayStyle', 'style']);
+      var _props = this.props,
+          actAsExpander = _props.actAsExpander,
+          children = _props.children,
+          expandable = _props.expandable,
+          mediaStyle = _props.mediaStyle,
+          overlay = _props.overlay,
+          overlayContainerStyle = _props.overlayContainerStyle,
+          overlayContentStyle = _props.overlayContentStyle,
+          overlayStyle = _props.overlayStyle,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['actAsExpander', 'children', 'expandable', 'mediaStyle', 'overlay', 'overlayContainerStyle', 'overlayContentStyle', 'overlayStyle', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

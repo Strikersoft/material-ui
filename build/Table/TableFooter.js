@@ -59,13 +59,12 @@ var TableFooter = function (_Component) {
   _createClass(TableFooter, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var adjustForCheckbox = _props.adjustForCheckbox;
-      var children = _props.children;
-      var className = _props.className;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['adjustForCheckbox', 'children', 'className', 'style']);
+      var _props = this.props,
+          adjustForCheckbox = _props.adjustForCheckbox,
+          children = _props.children,
+          className = _props.className,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['adjustForCheckbox', 'children', 'className', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

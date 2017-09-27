@@ -32,18 +32,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 function getStyles(props, context) {
-  var open = props.open;
-  var width = props.width;
-  var _context$muiTheme = context.muiTheme;
-  var _context$muiTheme$bas = _context$muiTheme.baseTheme;
-  var _context$muiTheme$bas2 = _context$muiTheme$bas.spacing;
-  var desktopGutter = _context$muiTheme$bas2.desktopGutter;
-  var desktopSubheaderHeight = _context$muiTheme$bas2.desktopSubheaderHeight;
-  var fontFamily = _context$muiTheme$bas.fontFamily;
-  var _context$muiTheme$sna = _context$muiTheme.snackbar;
-  var backgroundColor = _context$muiTheme$sna.backgroundColor;
-  var textColor = _context$muiTheme$sna.textColor;
-  var actionColor = _context$muiTheme$sna.actionColor;
+  var open = props.open,
+      width = props.width;
+  var _context$muiTheme = context.muiTheme,
+      _context$muiTheme$bas = _context$muiTheme.baseTheme,
+      _context$muiTheme$bas2 = _context$muiTheme$bas.spacing,
+      desktopGutter = _context$muiTheme$bas2.desktopGutter,
+      desktopSubheaderHeight = _context$muiTheme$bas2.desktopSubheaderHeight,
+      fontFamily = _context$muiTheme$bas.fontFamily,
+      _context$muiTheme$sna = _context$muiTheme.snackbar,
+      backgroundColor = _context$muiTheme$sna.backgroundColor,
+      textColor = _context$muiTheme$sna.textColor,
+      actionColor = _context$muiTheme$sna.actionColor;
 
 
   var isSmall = width === _withWidth.SMALL;
@@ -80,14 +80,13 @@ function getStyles(props, context) {
   return styles;
 }
 
-var SnackbarBody = exports.SnackbarBody = function SnackbarBody(props, context) {
-  var open = props.open;
-  var action = props.action;
-  var message = props.message;
-  var onActionTouchTap = props.onActionTouchTap;
-  var style = props.style;
-
-  var other = _objectWithoutProperties(props, ['open', 'action', 'message', 'onActionTouchTap', 'style']);
+var SnackbarBody = function SnackbarBody(props, context) {
+  var open = props.open,
+      action = props.action,
+      message = props.message,
+      onActionTouchTap = props.onActionTouchTap,
+      style = props.style,
+      other = _objectWithoutProperties(props, ['open', 'action', 'message', 'onActionTouchTap', 'style']);
 
   var prepareStyles = context.muiTheme.prepareStyles;
 
@@ -115,6 +114,7 @@ var SnackbarBody = exports.SnackbarBody = function SnackbarBody(props, context) 
   );
 };
 
+exports.SnackbarBody = SnackbarBody;
 SnackbarBody.propTypes = {
   /**
    * The label for the action on the snackbar.

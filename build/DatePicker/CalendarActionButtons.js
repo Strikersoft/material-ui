@@ -34,10 +34,10 @@ var CalendarActionButton = function (_Component) {
   _createClass(CalendarActionButton, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var cancelLabel = _props.cancelLabel;
-      var okLabel = _props.okLabel;
-      var wordings = _props.wordings;
+      var _props = this.props,
+          cancelLabel = _props.cancelLabel,
+          okLabel = _props.okLabel,
+          wordings = _props.wordings;
 
 
       var styles = {

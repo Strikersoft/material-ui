@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -136,30 +136,24 @@ var TableBody = function (_Component) {
 
       return _react2.default.Children.map(this.props.children, function (child) {
         if (_react2.default.isValidElement(child)) {
-          var _ret2 = function () {
-            var props = {
-              hoverable: _this2.props.showRowHover,
-              selected: _this2.isRowSelected(rowNumber),
-              striped: _this2.props.stripedRows && rowNumber % 2 === 0,
-              rowNumber: rowNumber++
-            };
+          var props = {
+            hoverable: _this2.props.showRowHover,
+            selected: _this2.isRowSelected(rowNumber),
+            striped: _this2.props.stripedRows && rowNumber % 2 === 0,
+            rowNumber: rowNumber++
+          };
 
-            if (rowNumber === numChildren) {
-              props.displayBorder = false;
-            }
+          if (rowNumber === numChildren) {
+            props.displayBorder = false;
+          }
 
-            var children = [_this2.createRowCheckboxColumn(props)];
+          var children = [_this2.createRowCheckboxColumn(props)];
 
-            _react2.default.Children.forEach(child.props.children, function (child) {
-              children.push(child);
-            });
+          _react2.default.Children.forEach(child.props.children, function (child) {
+            children.push(child);
+          });
 
-            return {
-              v: _react2.default.cloneElement(child, _extends({}, props, handlers), children)
-            };
-          }();
-
-          if ((typeof _ret2 === 'undefined' ? 'undefined' : _typeof(_ret2)) === "object") return _ret2.v;
+          return _react2.default.cloneElement(child, _extends({}, props, handlers), children);
         }
       });
     }
@@ -200,18 +194,16 @@ var TableBody = function (_Component) {
       var preSelectedRows = [];
 
       if (props.selectable && props.preScanRows) {
-        (function () {
-          var index = 0;
-          _react2.default.Children.forEach(props.children, function (child) {
-            if (_react2.default.isValidElement(child)) {
-              if (child.props.selected && (preSelectedRows.length === 0 || props.multiSelectable)) {
-                preSelectedRows.push(index);
-              }
-
-              index++;
+        var index = 0;
+        _react2.default.Children.forEach(props.children, function (child) {
+          if (_react2.default.isValidElement(child)) {
+            if (child.props.selected && (preSelectedRows.length === 0 || props.multiSelectable)) {
+              preSelectedRows.push(index);
             }
-          });
-        })();
+
+            index++;
+          }
+        });
       }
 
       return preSelectedRows;
@@ -368,9 +360,9 @@ var TableBody = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var className = _props.className;
-      var style = _props.style;
+      var _props = this.props,
+          className = _props.className,
+          style = _props.style;
       var prepareStyles = this.context.muiTheme.prepareStyles;
 
 

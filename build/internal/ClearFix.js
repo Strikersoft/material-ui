@@ -31,10 +31,9 @@ var styles = {
 };
 
 var ClearFix = function ClearFix(_ref) {
-  var style = _ref.style;
-  var children = _ref.children;
-
-  var other = _objectWithoutProperties(_ref, ['style', 'children']);
+  var style = _ref.style,
+      children = _ref.children,
+      other = _objectWithoutProperties(_ref, ['style', 'children']);
 
   return _react2.default.createElement(
     _BeforeAfterWrapper2.default,

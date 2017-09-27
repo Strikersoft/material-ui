@@ -27,11 +27,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function getStyles(props, context, state) {
-  var selected = props.selected;
-  var year = props.year;
-  var _context$muiTheme = context.muiTheme;
-  var baseTheme = _context$muiTheme.baseTheme;
-  var datePicker = _context$muiTheme.datePicker;
+  var selected = props.selected,
+      year = props.year;
+  var _context$muiTheme = context.muiTheme,
+      baseTheme = _context$muiTheme.baseTheme,
+      datePicker = _context$muiTheme.datePicker;
   var hover = state.hover;
 
 
@@ -45,7 +45,8 @@ function getStyles(props, context, state) {
       position: 'relative',
       textAlign: 'center',
       lineHeight: 'inherit',
-      WebkitTapHighlightColor: 'rgba(0,0,0,0)' },
+      WebkitTapHighlightColor: 'rgba(0,0,0,0)' // Remove mobile color flashing (deprecated)
+    },
     label: {
       alignSelf: 'center',
       color: hover || selected ? datePicker.color : baseTheme.palette.textColor,
@@ -85,13 +86,12 @@ var YearButton = function (_Component) {
   _createClass(YearButton, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var className = _props.className;
-      var year = _props.year;
-      var onTouchTap = _props.onTouchTap;
-      var selected = _props.selected;
-
-      var other = _objectWithoutProperties(_props, ['className', 'year', 'onTouchTap', 'selected']);
+      var _props = this.props,
+          className = _props.className,
+          year = _props.year,
+          onTouchTap = _props.onTouchTap,
+          selected = _props.selected,
+          other = _objectWithoutProperties(_props, ['className', 'year', 'onTouchTap', 'selected']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

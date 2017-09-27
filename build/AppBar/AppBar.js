@@ -49,10 +49,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function getStyles(props, context) {
-  var _context$muiTheme = context.muiTheme;
-  var appBar = _context$muiTheme.appBar;
-  var iconButtonSize = _context$muiTheme.button.iconButtonSize;
-  var zIndex = _context$muiTheme.zIndex;
+  var _context$muiTheme = context.muiTheme,
+      appBar = _context$muiTheme.appBar,
+      iconButtonSize = _context$muiTheme.button.iconButtonSize,
+      zIndex = _context$muiTheme.zIndex;
 
 
   var flatButtonSize = 36;
@@ -141,24 +141,23 @@ var AppBar = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var title = _props.title;
-      var titleStyle = _props.titleStyle;
-      var iconStyleLeft = _props.iconStyleLeft;
-      var iconStyleRight = _props.iconStyleRight;
-      var onTitleTouchTap = _props.onTitleTouchTap;
-      var showMenuIconButton = _props.showMenuIconButton;
-      var iconElementLeft = _props.iconElementLeft;
-      var iconElementRight = _props.iconElementRight;
-      var iconClassNameLeft = _props.iconClassNameLeft;
-      var iconClassNameRight = _props.iconClassNameRight;
-      var onLeftIconButtonTouchTap = _props.onLeftIconButtonTouchTap;
-      var className = _props.className;
-      var style = _props.style;
-      var zDepth = _props.zDepth;
-      var children = _props.children;
-
-      var other = _objectWithoutProperties(_props, ['title', 'titleStyle', 'iconStyleLeft', 'iconStyleRight', 'onTitleTouchTap', 'showMenuIconButton', 'iconElementLeft', 'iconElementRight', 'iconClassNameLeft', 'iconClassNameRight', 'onLeftIconButtonTouchTap', 'className', 'style', 'zDepth', 'children']);
+      var _props = this.props,
+          title = _props.title,
+          titleStyle = _props.titleStyle,
+          iconStyleLeft = _props.iconStyleLeft,
+          iconStyleRight = _props.iconStyleRight,
+          onTitleTouchTap = _props.onTitleTouchTap,
+          showMenuIconButton = _props.showMenuIconButton,
+          iconElementLeft = _props.iconElementLeft,
+          iconElementRight = _props.iconElementRight,
+          iconClassNameLeft = _props.iconClassNameLeft,
+          iconClassNameRight = _props.iconClassNameRight,
+          onLeftIconButtonTouchTap = _props.onLeftIconButtonTouchTap,
+          className = _props.className,
+          style = _props.style,
+          zDepth = _props.zDepth,
+          children = _props.children,
+          other = _objectWithoutProperties(_props, ['title', 'titleStyle', 'iconStyleLeft', 'iconStyleRight', 'onTitleTouchTap', 'showMenuIconButton', 'iconElementLeft', 'iconElementRight', 'iconClassNameLeft', 'iconClassNameRight', 'onLeftIconButtonTouchTap', 'className', 'style', 'zDepth', 'children']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

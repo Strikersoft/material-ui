@@ -140,10 +140,10 @@ var EnhancedButton = function (_Component) {
   _createClass(EnhancedButton, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
-      var _props = this.props;
-      var disabled = _props.disabled;
-      var disableKeyboardFocus = _props.disableKeyboardFocus;
-      var keyboardFocused = _props.keyboardFocused;
+      var _props = this.props,
+          disabled = _props.disabled,
+          disableKeyboardFocus = _props.disableKeyboardFocus,
+          keyboardFocused = _props.keyboardFocused;
 
       if (!disabled && keyboardFocused && !disableKeyboardFocus) {
         this.setState({ isKeyboardFocused: true });
@@ -206,17 +206,17 @@ var EnhancedButton = function (_Component) {
   }, {
     key: 'createButtonChildren',
     value: function createButtonChildren() {
-      var _props2 = this.props;
-      var centerRipple = _props2.centerRipple;
-      var children = _props2.children;
-      var disabled = _props2.disabled;
-      var disableFocusRipple = _props2.disableFocusRipple;
-      var disableKeyboardFocus = _props2.disableKeyboardFocus;
-      var disableTouchRipple = _props2.disableTouchRipple;
-      var focusRippleColor = _props2.focusRippleColor;
-      var focusRippleOpacity = _props2.focusRippleOpacity;
-      var touchRippleColor = _props2.touchRippleColor;
-      var touchRippleOpacity = _props2.touchRippleOpacity;
+      var _props2 = this.props,
+          centerRipple = _props2.centerRipple,
+          children = _props2.children,
+          disabled = _props2.disabled,
+          disableFocusRipple = _props2.disableFocusRipple,
+          disableKeyboardFocus = _props2.disableKeyboardFocus,
+          disableTouchRipple = _props2.disableTouchRipple,
+          focusRippleColor = _props2.focusRippleColor,
+          focusRippleOpacity = _props2.focusRippleOpacity,
+          touchRippleColor = _props2.touchRippleColor,
+          touchRippleOpacity = _props2.touchRippleOpacity;
       var isKeyboardFocused = this.state.isKeyboardFocused;
 
       // Focus Ripple
@@ -247,37 +247,36 @@ var EnhancedButton = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props3 = this.props;
-      var centerRipple = _props3.centerRipple;
-      var children = _props3.children;
-      var containerElement = _props3.containerElement;
-      var disabled = _props3.disabled;
-      var disableFocusRipple = _props3.disableFocusRipple;
-      var disableKeyboardFocus = _props3.disableKeyboardFocus;
-      var disableTouchRipple = _props3.disableTouchRipple;
-      var focusRippleColor = _props3.focusRippleColor;
-      var focusRippleOpacity = _props3.focusRippleOpacity;
-      var href = _props3.href;
-      var keyboardFocused = _props3.keyboardFocused;
-      var linkButton = _props3.linkButton;
-      var touchRippleColor = _props3.touchRippleColor;
-      var touchRippleOpacity = _props3.touchRippleOpacity;
-      var onBlur = _props3.onBlur;
-      var onClick = _props3.onClick;
-      var onFocus = _props3.onFocus;
-      var onKeyUp = _props3.onKeyUp;
-      var onKeyDown = _props3.onKeyDown;
-      var onKeyboardFocus = _props3.onKeyboardFocus;
-      var onTouchTap = _props3.onTouchTap;
-      var style = _props3.style;
-      var tabIndex = _props3.tabIndex;
-      var type = _props3.type;
+      var _props3 = this.props,
+          centerRipple = _props3.centerRipple,
+          children = _props3.children,
+          containerElement = _props3.containerElement,
+          disabled = _props3.disabled,
+          disableFocusRipple = _props3.disableFocusRipple,
+          disableKeyboardFocus = _props3.disableKeyboardFocus,
+          disableTouchRipple = _props3.disableTouchRipple,
+          focusRippleColor = _props3.focusRippleColor,
+          focusRippleOpacity = _props3.focusRippleOpacity,
+          href = _props3.href,
+          keyboardFocused = _props3.keyboardFocused,
+          linkButton = _props3.linkButton,
+          touchRippleColor = _props3.touchRippleColor,
+          touchRippleOpacity = _props3.touchRippleOpacity,
+          onBlur = _props3.onBlur,
+          onClick = _props3.onClick,
+          onFocus = _props3.onFocus,
+          onKeyUp = _props3.onKeyUp,
+          onKeyDown = _props3.onKeyDown,
+          onKeyboardFocus = _props3.onKeyboardFocus,
+          onTouchTap = _props3.onTouchTap,
+          style = _props3.style,
+          tabIndex = _props3.tabIndex,
+          type = _props3.type,
+          other = _objectWithoutProperties(_props3, ['centerRipple', 'children', 'containerElement', 'disabled', 'disableFocusRipple', 'disableKeyboardFocus', 'disableTouchRipple', 'focusRippleColor', 'focusRippleOpacity', 'href', 'keyboardFocused', 'linkButton', 'touchRippleColor', 'touchRippleOpacity', 'onBlur', 'onClick', 'onFocus', 'onKeyUp', 'onKeyDown', 'onKeyboardFocus', 'onTouchTap', 'style', 'tabIndex', 'type']);
 
-      var other = _objectWithoutProperties(_props3, ['centerRipple', 'children', 'containerElement', 'disabled', 'disableFocusRipple', 'disableKeyboardFocus', 'disableTouchRipple', 'focusRippleColor', 'focusRippleOpacity', 'href', 'keyboardFocused', 'linkButton', 'touchRippleColor', 'touchRippleOpacity', 'onBlur', 'onClick', 'onFocus', 'onKeyUp', 'onKeyDown', 'onKeyboardFocus', 'onTouchTap', 'style', 'tabIndex', 'type']);
-
-      var _context$muiTheme = this.context.muiTheme;
-      var prepareStyles = _context$muiTheme.prepareStyles;
-      var enhancedButton = _context$muiTheme.enhancedButton;
+      var _context$muiTheme = this.context.muiTheme,
+          prepareStyles = _context$muiTheme.prepareStyles,
+          enhancedButton = _context$muiTheme.enhancedButton;
 
 
       var mergedStyles = (0, _simpleAssign2.default)({

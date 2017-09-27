@@ -40,11 +40,10 @@ function getStyles(props, context) {
 }
 
 var BottomNavigation = function BottomNavigation(props, context) {
-  var children = props.children;
-  var style = props.style;
-  var selectedIndex = props.selectedIndex;
-
-  var other = _objectWithoutProperties(props, ['children', 'style', 'selectedIndex']);
+  var children = props.children,
+      style = props.style,
+      selectedIndex = props.selectedIndex,
+      other = _objectWithoutProperties(props, ['children', 'style', 'selectedIndex']);
 
   var prepareStyles = context.muiTheme.prepareStyles;
 

@@ -35,7 +35,8 @@ var rowsHeight = 24;
 function getStyles(props, context, state) {
   return {
     root: {
-      position: 'relative' },
+      position: 'relative' // because the shadow has position: 'absolute'
+    },
     textarea: {
       height: state.height,
       width: '100%',
@@ -148,17 +149,16 @@ var EnhancedTextarea = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var onChange = _props.onChange;
-      var onHeightChange = _props.onHeightChange;
-      var rows = _props.rows;
-      var rowsMax = _props.rowsMax;
-      var shadowStyle = _props.shadowStyle;
-      var style = _props.style;
-      var textareaStyle = _props.textareaStyle;
-      var valueLink = _props.valueLink;
-
-      var other = _objectWithoutProperties(_props, ['onChange', 'onHeightChange', 'rows', 'rowsMax', 'shadowStyle', 'style', 'textareaStyle', 'valueLink']);
+      var _props = this.props,
+          onChange = _props.onChange,
+          onHeightChange = _props.onHeightChange,
+          rows = _props.rows,
+          rowsMax = _props.rowsMax,
+          shadowStyle = _props.shadowStyle,
+          style = _props.style,
+          textareaStyle = _props.textareaStyle,
+          valueLink = _props.valueLink,
+          other = _objectWithoutProperties(_props, ['onChange', 'onHeightChange', 'rows', 'rowsMax', 'shadowStyle', 'style', 'textareaStyle', 'valueLink']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

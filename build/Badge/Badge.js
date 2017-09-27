@@ -27,8 +27,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function getStyles(props, context) {
-  var primary = props.primary;
-  var secondary = props.secondary;
+  var primary = props.primary,
+      secondary = props.secondary;
   var badge = context.muiTheme.badge;
 
 
@@ -88,15 +88,14 @@ var Badge = function (_Component) {
   _createClass(Badge, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var badgeContent = _props.badgeContent;
-      var badgeStyle = _props.badgeStyle;
-      var children = _props.children;
-      var primary = _props.primary;
-      var secondary = _props.secondary;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['badgeContent', 'badgeStyle', 'children', 'primary', 'secondary', 'style']);
+      var _props = this.props,
+          badgeContent = _props.badgeContent,
+          badgeStyle = _props.badgeStyle,
+          children = _props.children,
+          primary = _props.primary,
+          secondary = _props.secondary,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['badgeContent', 'badgeStyle', 'children', 'primary', 'secondary', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

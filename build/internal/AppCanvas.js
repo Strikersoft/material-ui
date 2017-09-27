@@ -34,9 +34,9 @@ var AppCanvas = function (_Component) {
   _createClass(AppCanvas, [{
     key: 'render',
     value: function render() {
-      var _context$muiTheme = this.context.muiTheme;
-      var baseTheme = _context$muiTheme.baseTheme;
-      var prepareStyles = _context$muiTheme.prepareStyles;
+      var _context$muiTheme = this.context.muiTheme,
+          baseTheme = _context$muiTheme.baseTheme,
+          prepareStyles = _context$muiTheme.prepareStyles;
 
 
       var styles = {

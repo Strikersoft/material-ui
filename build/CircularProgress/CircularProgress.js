@@ -42,10 +42,10 @@ function getRelativeValue(value, min, max) {
 }
 
 function getStyles(props, context) {
-  var max = props.max;
-  var min = props.min;
-  var size = props.size;
-  var value = props.value;
+  var max = props.max,
+      min = props.min,
+      size = props.size,
+      value = props.value;
   var palette = context.muiTheme.baseTheme.palette;
 
   var zoom = size * 1.4;
@@ -165,12 +165,11 @@ var CircularProgress = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var style = _props.style;
-      var innerStyle = _props.innerStyle;
-      var size = _props.size;
-
-      var other = _objectWithoutProperties(_props, ['style', 'innerStyle', 'size']);
+      var _props = this.props,
+          style = _props.style,
+          innerStyle = _props.innerStyle,
+          size = _props.size,
+          other = _objectWithoutProperties(_props, ['style', 'innerStyle', 'size']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

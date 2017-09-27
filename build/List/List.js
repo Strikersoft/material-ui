@@ -54,16 +54,15 @@ var List = function (_Component) {
   _createClass(List, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var children = _props.children;
-      var _props$insetSubheader = _props.insetSubheader;
-      var insetSubheader = _props$insetSubheader === undefined ? false : _props$insetSubheader;
-      var style = _props.style;
-      var subheader = _props.subheader;
-      var subheaderStyle = _props.subheaderStyle;
-      var zDepth = _props.zDepth;
-
-      var other = _objectWithoutProperties(_props, ['children', 'insetSubheader', 'style', 'subheader', 'subheaderStyle', 'zDepth']);
+      var _props = this.props,
+          children = _props.children,
+          _props$insetSubheader = _props.insetSubheader,
+          insetSubheader = _props$insetSubheader === undefined ? false : _props$insetSubheader,
+          style = _props.style,
+          subheader = _props.subheader,
+          subheaderStyle = _props.subheaderStyle,
+          zDepth = _props.zDepth,
+          other = _objectWithoutProperties(_props, ['children', 'insetSubheader', 'style', 'subheader', 'subheaderStyle', 'zDepth']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

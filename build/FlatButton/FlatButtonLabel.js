@@ -48,9 +48,9 @@ var FlatButtonLabel = function (_Component) {
   _createClass(FlatButtonLabel, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var label = _props.label;
-      var style = _props.style;
+      var _props = this.props,
+          label = _props.label,
+          style = _props.style;
       var prepareStyles = this.context.muiTheme.prepareStyles;
 
       var styles = getStyles(this.props, this.context);

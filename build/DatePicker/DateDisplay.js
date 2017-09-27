@@ -144,19 +144,18 @@ var DateDisplay = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var DateTimeFormat = _props.DateTimeFormat;
-      var disableYearSelection = _props.disableYearSelection;
-      var locale = _props.locale;
-      var mode = _props.mode;
-      var monthDaySelected = _props.monthDaySelected;
-      var onTouchTapMonthDay = _props.onTouchTapMonthDay;
-      var onTouchTapYear = _props.onTouchTapYear;
-      var selectedDate = _props.selectedDate;
-      var style = _props.style;
-      var weekCount = _props.weekCount;
-
-      var other = _objectWithoutProperties(_props, ['DateTimeFormat', 'disableYearSelection', 'locale', 'mode', 'monthDaySelected', 'onTouchTapMonthDay', 'onTouchTapYear', 'selectedDate', 'style', 'weekCount']);
+      var _props = this.props,
+          DateTimeFormat = _props.DateTimeFormat,
+          disableYearSelection = _props.disableYearSelection,
+          locale = _props.locale,
+          mode = _props.mode,
+          monthDaySelected = _props.monthDaySelected,
+          onTouchTapMonthDay = _props.onTouchTapMonthDay,
+          onTouchTapYear = _props.onTouchTapYear,
+          selectedDate = _props.selectedDate,
+          style = _props.style,
+          weekCount = _props.weekCount,
+          other = _objectWithoutProperties(_props, ['DateTimeFormat', 'disableYearSelection', 'locale', 'mode', 'monthDaySelected', 'onTouchTapMonthDay', 'onTouchTapYear', 'selectedDate', 'style', 'weekCount']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

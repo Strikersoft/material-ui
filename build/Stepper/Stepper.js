@@ -61,11 +61,11 @@ var Stepper = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var activeStep = _props.activeStep;
-      var children = _props.children;
-      var linear = _props.linear;
-      var style = _props.style;
+      var _props = this.props,
+          activeStep = _props.activeStep,
+          children = _props.children,
+          linear = _props.linear,
+          style = _props.style;
       var prepareStyles = this.context.muiTheme.prepareStyles;
 
       var styles = getStyles(this.props, this.context);

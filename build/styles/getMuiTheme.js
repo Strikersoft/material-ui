@@ -62,10 +62,10 @@ function getMuiTheme(muiTheme) {
     userAgent: undefined
   }, _lightBaseTheme2.default, muiTheme].concat(more));
 
-  var _muiTheme = muiTheme;
-  var spacing = _muiTheme.spacing;
-  var fontFamily = _muiTheme.fontFamily;
-  var palette = _muiTheme.palette;
+  var _muiTheme = muiTheme,
+      spacing = _muiTheme.spacing,
+      fontFamily = _muiTheme.fontFamily,
+      palette = _muiTheme.palette;
 
   var baseTheme = { spacing: spacing, fontFamily: fontFamily, palette: palette };
 
@@ -362,7 +362,8 @@ function getMuiTheme(muiTheme) {
     }
   }, muiTheme, {
     baseTheme: baseTheme, // To provide backward compatibility.
-    rawTheme: baseTheme });
+    rawTheme: baseTheme // To provide backward compatibility.
+  });
 
   var transformers = [_autoprefixer2.default, _rtl2.default, _callOnce2.default].map(function (t) {
     return t(muiTheme);

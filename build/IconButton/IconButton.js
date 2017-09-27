@@ -147,19 +147,18 @@ var IconButton = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var disabled = _props.disabled;
-      var disableTouchRipple = _props.disableTouchRipple;
-      var children = _props.children;
-      var iconClassName = _props.iconClassName;
-      var onKeyboardFocus = _props.onKeyboardFocus;
-      var tooltip = _props.tooltip;
-      var tooltipPositionProp = _props.tooltipPosition;
-      var tooltipStyles = _props.tooltipStyles;
-      var touch = _props.touch;
-      var iconStyle = _props.iconStyle;
-
-      var other = _objectWithoutProperties(_props, ['disabled', 'disableTouchRipple', 'children', 'iconClassName', 'onKeyboardFocus', 'tooltip', 'tooltipPosition', 'tooltipStyles', 'touch', 'iconStyle']);
+      var _props = this.props,
+          disabled = _props.disabled,
+          disableTouchRipple = _props.disableTouchRipple,
+          children = _props.children,
+          iconClassName = _props.iconClassName,
+          onKeyboardFocus = _props.onKeyboardFocus,
+          tooltip = _props.tooltip,
+          tooltipPositionProp = _props.tooltipPosition,
+          tooltipStyles = _props.tooltipStyles,
+          touch = _props.touch,
+          iconStyle = _props.iconStyle,
+          other = _objectWithoutProperties(_props, ['disabled', 'disableTouchRipple', 'children', 'iconClassName', 'onKeyboardFocus', 'tooltip', 'tooltipPosition', 'tooltipStyles', 'touch', 'iconStyle']);
 
       var fonticon = void 0;
 
@@ -177,9 +176,8 @@ var IconButton = function (_Component) {
       }) : null;
 
       if (iconClassName) {
-        var iconHoverColor = iconStyle.iconHoverColor;
-
-        var iconStyleFontIcon = _objectWithoutProperties(iconStyle, ['iconHoverColor']);
+        var iconHoverColor = iconStyle.iconHoverColor,
+            iconStyleFontIcon = _objectWithoutProperties(iconStyle, ['iconHoverColor']);
 
         fonticon = _react2.default.createElement(
           _FontIcon2.default,

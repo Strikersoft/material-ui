@@ -34,7 +34,7 @@ var getStyles = function getStyles(_ref, _ref2) {
   var styles = {
     root: {
       flex: '0 0 auto',
-      width: '25%'
+      width: '20%'
     }
   };
 
@@ -64,12 +64,12 @@ var Step = function (_Component) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref3 = Step.__proto__ || Object.getPrototypeOf(Step)).call.apply(_ref3, [this].concat(args))), _this), _this.renderChild = function (child) {
-      var _this$props = _this.props;
-      var active = _this$props.active;
-      var completed = _this$props.completed;
-      var disabled = _this$props.disabled;
-      var index = _this$props.index;
-      var last = _this$props.last;
+      var _this$props = _this.props,
+          active = _this$props.active,
+          completed = _this$props.completed,
+          disabled = _this$props.disabled,
+          index = _this$props.index,
+          last = _this$props.last;
 
 
       var icon = index + 1;
@@ -81,16 +81,15 @@ var Step = function (_Component) {
   _createClass(Step, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var active = _props.active;
-      var completed = _props.completed;
-      var disabled = _props.disabled;
-      var index = _props.index;
-      var last = _props.last;
-      var children = _props.children;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['active', 'completed', 'disabled', 'index', 'last', 'children', 'style']);
+      var _props = this.props,
+          active = _props.active,
+          completed = _props.completed,
+          disabled = _props.disabled,
+          index = _props.index,
+          last = _props.last,
+          children = _props.children,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['active', 'completed', 'disabled', 'index', 'last', 'children', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 
@@ -98,7 +97,7 @@ var Step = function (_Component) {
 
       return _react2.default.createElement(
         'div',
-        _extends({ style: prepareStyles((0, _simpleAssign2.default)(styles.root, style)) }, other),
+        _extends({ className: 'step-block', style: prepareStyles((0, _simpleAssign2.default)(styles.root, style)) }, other),
         _react2.default.Children.map(children, this.renderChild)
       );
     }

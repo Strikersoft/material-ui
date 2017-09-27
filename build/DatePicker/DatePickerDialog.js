@@ -112,29 +112,28 @@ var DatePickerDialog = function (_Component) {
   _createClass(DatePickerDialog, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var DateTimeFormat = _props.DateTimeFormat;
-      var autoOk = _props.autoOk;
-      var cancelLabel = _props.cancelLabel;
-      var container = _props.container;
-      var containerStyle = _props.containerStyle;
-      var disableYearSelection = _props.disableYearSelection;
-      var initialDate = _props.initialDate;
-      var firstDayOfWeek = _props.firstDayOfWeek;
-      var locale = _props.locale;
-      var maxDate = _props.maxDate;
-      var minDate = _props.minDate;
-      var mode = _props.mode;
-      var okLabel = _props.okLabel;
-      var onAccept = _props.onAccept;
-      var onDismiss = _props.onDismiss;
-      var onShow = _props.onShow;
-      var shouldDisableDate = _props.shouldDisableDate;
-      var style = _props.style;
-      var wordings = _props.wordings;
-      var animation = _props.animation;
-
-      var other = _objectWithoutProperties(_props, ['DateTimeFormat', 'autoOk', 'cancelLabel', 'container', 'containerStyle', 'disableYearSelection', 'initialDate', 'firstDayOfWeek', 'locale', 'maxDate', 'minDate', 'mode', 'okLabel', 'onAccept', 'onDismiss', 'onShow', 'shouldDisableDate', 'style', 'wordings', 'animation']);
+      var _props = this.props,
+          DateTimeFormat = _props.DateTimeFormat,
+          autoOk = _props.autoOk,
+          cancelLabel = _props.cancelLabel,
+          container = _props.container,
+          containerStyle = _props.containerStyle,
+          disableYearSelection = _props.disableYearSelection,
+          initialDate = _props.initialDate,
+          firstDayOfWeek = _props.firstDayOfWeek,
+          locale = _props.locale,
+          maxDate = _props.maxDate,
+          minDate = _props.minDate,
+          mode = _props.mode,
+          okLabel = _props.okLabel,
+          onAccept = _props.onAccept,
+          onDismiss = _props.onDismiss,
+          onShow = _props.onShow,
+          shouldDisableDate = _props.shouldDisableDate,
+          style = _props.style,
+          wordings = _props.wordings,
+          animation = _props.animation,
+          other = _objectWithoutProperties(_props, ['DateTimeFormat', 'autoOk', 'cancelLabel', 'container', 'containerStyle', 'disableYearSelection', 'initialDate', 'firstDayOfWeek', 'locale', 'maxDate', 'minDate', 'mode', 'okLabel', 'onAccept', 'onDismiss', 'onShow', 'shouldDisableDate', 'style', 'wordings', 'animation']);
 
       var open = this.state.open;
 

@@ -159,7 +159,7 @@ var DatePicker = function (_Component) {
   }, {
     key: 'getControlledDate',
     value: function getControlledDate() {
-      var props = arguments.length <= 0 || arguments[0] === undefined ? this.props : arguments[0];
+      var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.props;
 
       if (props.value instanceof Date) {
         return props.value;
@@ -168,32 +168,31 @@ var DatePicker = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var DateTimeFormat = _props.DateTimeFormat;
-      var autoOk = _props.autoOk;
-      var cancelLabel = _props.cancelLabel;
-      var className = _props.className;
-      var container = _props.container;
-      var defaultDate = _props.defaultDate;
-      var dialogContainerStyle = _props.dialogContainerStyle;
-      var disableYearSelection = _props.disableYearSelection;
-      var firstDayOfWeek = _props.firstDayOfWeek;
-      var formatDateProp = _props.formatDate;
-      var locale = _props.locale;
-      var maxDate = _props.maxDate;
-      var minDate = _props.minDate;
-      var mode = _props.mode;
-      var okLabel = _props.okLabel;
-      var onDismiss = _props.onDismiss;
-      var onFocus = _props.onFocus;
-      var onShow = _props.onShow;
-      var onTouchTap = _props.onTouchTap;
-      var shouldDisableDate = _props.shouldDisableDate;
-      var style = _props.style;
-      var textFieldStyle = _props.textFieldStyle;
-      var wordings = _props.wordings;
-
-      var other = _objectWithoutProperties(_props, ['DateTimeFormat', 'autoOk', 'cancelLabel', 'className', 'container', 'defaultDate', 'dialogContainerStyle', 'disableYearSelection', 'firstDayOfWeek', 'formatDate', 'locale', 'maxDate', 'minDate', 'mode', 'okLabel', 'onDismiss', 'onFocus', 'onShow', 'onTouchTap', 'shouldDisableDate', 'style', 'textFieldStyle', 'wordings']);
+      var _props = this.props,
+          DateTimeFormat = _props.DateTimeFormat,
+          autoOk = _props.autoOk,
+          cancelLabel = _props.cancelLabel,
+          className = _props.className,
+          container = _props.container,
+          defaultDate = _props.defaultDate,
+          dialogContainerStyle = _props.dialogContainerStyle,
+          disableYearSelection = _props.disableYearSelection,
+          firstDayOfWeek = _props.firstDayOfWeek,
+          formatDateProp = _props.formatDate,
+          locale = _props.locale,
+          maxDate = _props.maxDate,
+          minDate = _props.minDate,
+          mode = _props.mode,
+          okLabel = _props.okLabel,
+          onDismiss = _props.onDismiss,
+          onFocus = _props.onFocus,
+          onShow = _props.onShow,
+          onTouchTap = _props.onTouchTap,
+          shouldDisableDate = _props.shouldDisableDate,
+          style = _props.style,
+          textFieldStyle = _props.textFieldStyle,
+          wordings = _props.wordings,
+          other = _objectWithoutProperties(_props, ['DateTimeFormat', 'autoOk', 'cancelLabel', 'className', 'container', 'defaultDate', 'dialogContainerStyle', 'disableYearSelection', 'firstDayOfWeek', 'formatDate', 'locale', 'maxDate', 'minDate', 'mode', 'okLabel', 'onDismiss', 'onFocus', 'onShow', 'onTouchTap', 'shouldDisableDate', 'style', 'textFieldStyle', 'wordings']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

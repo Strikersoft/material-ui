@@ -81,16 +81,15 @@ var Card = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var _props = this.props;
-      var style = _props.style;
-      var containerStyle = _props.containerStyle;
-      var children = _props.children;
-      var expandable = _props.expandable;
-      var expandedProp = _props.expanded;
-      var initiallyExpanded = _props.initiallyExpanded;
-      var onExpandChange = _props.onExpandChange;
-
-      var other = _objectWithoutProperties(_props, ['style', 'containerStyle', 'children', 'expandable', 'expanded', 'initiallyExpanded', 'onExpandChange']);
+      var _props = this.props,
+          style = _props.style,
+          containerStyle = _props.containerStyle,
+          children = _props.children,
+          expandable = _props.expandable,
+          expandedProp = _props.expanded,
+          initiallyExpanded = _props.initiallyExpanded,
+          onExpandChange = _props.onExpandChange,
+          other = _objectWithoutProperties(_props, ['style', 'containerStyle', 'children', 'expandable', 'expanded', 'initiallyExpanded', 'onExpandChange']);
 
       var lastElement = void 0;
       var expanded = this.state.expanded;

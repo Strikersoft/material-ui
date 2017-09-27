@@ -85,13 +85,12 @@ var Overlay = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var autoLockScrolling = _props.autoLockScrolling;
-      var show = _props.show;
-      var style = _props.style;
-      var transitionEnabled = _props.transitionEnabled;
-
-      var other = _objectWithoutProperties(_props, ['autoLockScrolling', 'show', 'style', 'transitionEnabled']);
+      var _props = this.props,
+          autoLockScrolling = _props.autoLockScrolling,
+          show = _props.show,
+          style = _props.style,
+          transitionEnabled = _props.transitionEnabled,
+          other = _objectWithoutProperties(_props, ['autoLockScrolling', 'show', 'style', 'transitionEnabled']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

@@ -51,20 +51,20 @@ function validateLabel(props, propName, componentName) {
 }
 
 function getStyles(props, context, state) {
-  var _context$muiTheme = context.muiTheme;
-  var baseTheme = _context$muiTheme.baseTheme;
-  var button = _context$muiTheme.button;
-  var raisedButton = _context$muiTheme.raisedButton;
-  var disabled = props.disabled;
-  var disabledBackgroundColor = props.disabledBackgroundColor;
-  var disabledLabelColor = props.disabledLabelColor;
-  var fullWidth = props.fullWidth;
-  var icon = props.icon;
-  var label = props.label;
-  var labelPosition = props.labelPosition;
-  var primary = props.primary;
-  var secondary = props.secondary;
-  var style = props.style;
+  var _context$muiTheme = context.muiTheme,
+      baseTheme = _context$muiTheme.baseTheme,
+      button = _context$muiTheme.button,
+      raisedButton = _context$muiTheme.raisedButton;
+  var disabled = props.disabled,
+      disabledBackgroundColor = props.disabledBackgroundColor,
+      disabledLabelColor = props.disabledLabelColor,
+      fullWidth = props.fullWidth,
+      icon = props.icon,
+      label = props.label,
+      labelPosition = props.labelPosition,
+      primary = props.primary,
+      secondary = props.secondary,
+      style = props.style;
 
 
   var amount = primary || secondary ? 0.4 : 0.08;
@@ -253,22 +253,21 @@ var RaisedButton = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var backgroundColor = _props.backgroundColor;
-      var children = _props.children;
-      var className = _props.className;
-      var disabled = _props.disabled;
-      var fullWidth = _props.fullWidth;
-      var icon = _props.icon;
-      var label = _props.label;
-      var labelColor = _props.labelColor;
-      var labelPosition = _props.labelPosition;
-      var labelStyle = _props.labelStyle;
-      var primary = _props.primary;
-      var rippleStyle = _props.rippleStyle;
-      var secondary = _props.secondary;
-
-      var other = _objectWithoutProperties(_props, ['backgroundColor', 'children', 'className', 'disabled', 'fullWidth', 'icon', 'label', 'labelColor', 'labelPosition', 'labelStyle', 'primary', 'rippleStyle', 'secondary']);
+      var _props = this.props,
+          backgroundColor = _props.backgroundColor,
+          children = _props.children,
+          className = _props.className,
+          disabled = _props.disabled,
+          fullWidth = _props.fullWidth,
+          icon = _props.icon,
+          label = _props.label,
+          labelColor = _props.labelColor,
+          labelPosition = _props.labelPosition,
+          labelStyle = _props.labelStyle,
+          primary = _props.primary,
+          rippleStyle = _props.rippleStyle,
+          secondary = _props.secondary,
+          other = _objectWithoutProperties(_props, ['backgroundColor', 'children', 'className', 'disabled', 'fullWidth', 'icon', 'label', 'labelColor', 'labelPosition', 'labelStyle', 'primary', 'rippleStyle', 'secondary']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

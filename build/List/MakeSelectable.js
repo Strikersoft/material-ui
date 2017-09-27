@@ -33,7 +33,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MakeSelectable = exports.MakeSelectable = function MakeSelectable(Component) {
+var MakeSelectable = function MakeSelectable(Component) {
   var _class, _temp2;
 
   return _temp2 = _class = function (_Component) {
@@ -125,11 +125,10 @@ var MakeSelectable = exports.MakeSelectable = function MakeSelectable(Component)
       value: function render() {
         var _this3 = this;
 
-        var _props = this.props;
-        var children = _props.children;
-        var selectedItemStyle = _props.selectedItemStyle;
-
-        var other = _objectWithoutProperties(_props, ['children', 'selectedItemStyle']);
+        var _props = this.props,
+            children = _props.children,
+            selectedItemStyle = _props.selectedItemStyle,
+            other = _objectWithoutProperties(_props, ['children', 'selectedItemStyle']);
 
         this.keyIndex = 0;
         var styles = {};
@@ -164,4 +163,5 @@ var MakeSelectable = exports.MakeSelectable = function MakeSelectable(Component)
   }, _temp2;
 };
 
+exports.MakeSelectable = MakeSelectable;
 exports.default = MakeSelectable;

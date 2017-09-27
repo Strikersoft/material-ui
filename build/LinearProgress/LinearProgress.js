@@ -38,9 +38,9 @@ function getRelativeValue(value, min, max) {
 }
 
 function getStyles(props, context) {
-  var max = props.max;
-  var min = props.min;
-  var value = props.value;
+  var max = props.max,
+      min = props.min,
+      value = props.value;
   var palette = context.muiTheme.baseTheme.palette;
 
 
@@ -148,10 +148,9 @@ var LinearProgress = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['style']);
+      var _props = this.props,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

@@ -43,11 +43,11 @@ function getStyles(props) {
 }
 
 var TextFieldLabel = function TextFieldLabel(props) {
-  var muiTheme = props.muiTheme;
-  var className = props.className;
-  var children = props.children;
-  var htmlFor = props.htmlFor;
-  var onTouchTap = props.onTouchTap;
+  var muiTheme = props.muiTheme,
+      className = props.className,
+      children = props.children,
+      htmlFor = props.htmlFor,
+      onTouchTap = props.onTouchTap;
   var prepareStyles = muiTheme.prepareStyles;
 
   var styles = getStyles(props);

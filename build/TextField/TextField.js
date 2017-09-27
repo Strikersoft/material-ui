@@ -69,16 +69,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var getStyles = function getStyles(props, context, state) {
-  var _context$muiTheme = context.muiTheme;
-  var baseTheme = _context$muiTheme.baseTheme;
-  var _context$muiTheme$tex = _context$muiTheme.textField;
-  var floatingLabelColor = _context$muiTheme$tex.floatingLabelColor;
-  var focusColor = _context$muiTheme$tex.focusColor;
-  var textColor = _context$muiTheme$tex.textColor;
-  var disabledTextColor = _context$muiTheme$tex.disabledTextColor;
-  var backgroundColor = _context$muiTheme$tex.backgroundColor;
-  var hintColor = _context$muiTheme$tex.hintColor;
-  var errorColor = _context$muiTheme$tex.errorColor;
+  var _context$muiTheme = context.muiTheme,
+      baseTheme = _context$muiTheme.baseTheme,
+      _context$muiTheme$tex = _context$muiTheme.textField,
+      floatingLabelColor = _context$muiTheme$tex.floatingLabelColor,
+      focusColor = _context$muiTheme$tex.focusColor,
+      textColor = _context$muiTheme$tex.textColor,
+      disabledTextColor = _context$muiTheme$tex.disabledTextColor,
+      backgroundColor = _context$muiTheme$tex.backgroundColor,
+      hintColor = _context$muiTheme$tex.hintColor,
+      errorColor = _context$muiTheme$tex.errorColor;
 
 
   var styles = {
@@ -215,12 +215,12 @@ var TextField = function (_Component) {
   _createClass(TextField, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
-      var _props = this.props;
-      var children = _props.children;
-      var name = _props.name;
-      var hintText = _props.hintText;
-      var floatingLabelText = _props.floatingLabelText;
-      var id = _props.id;
+      var _props = this.props,
+          children = _props.children,
+          name = _props.name,
+          hintText = _props.hintText,
+          floatingLabelText = _props.floatingLabelText,
+          id = _props.id;
 
 
       var propsLeaf = children ? children.props : this.props;
@@ -298,36 +298,35 @@ var TextField = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var _props2 = this.props;
-      var children = _props2.children;
-      var className = _props2.className;
-      var disabled = _props2.disabled;
-      var errorStyle = _props2.errorStyle;
-      var errorText = _props2.errorText;
-      var floatingLabelFixed = _props2.floatingLabelFixed;
-      var floatingLabelFocusStyle = _props2.floatingLabelFocusStyle;
-      var floatingLabelStyle = _props2.floatingLabelStyle;
-      var floatingLabelText = _props2.floatingLabelText;
-      var fullWidth = _props2.fullWidth;
-      var hintText = _props2.hintText;
-      var hintStyle = _props2.hintStyle;
-      var id = _props2.id;
-      var inputStyle = _props2.inputStyle;
-      var multiLine = _props2.multiLine;
-      var onBlur = _props2.onBlur;
-      var onChange = _props2.onChange;
-      var onFocus = _props2.onFocus;
-      var style = _props2.style;
-      var type = _props2.type;
-      var underlineDisabledStyle = _props2.underlineDisabledStyle;
-      var underlineFocusStyle = _props2.underlineFocusStyle;
-      var underlineShow = _props2.underlineShow;
-      var underlineStyle = _props2.underlineStyle;
-      var rows = _props2.rows;
-      var rowsMax = _props2.rowsMax;
-      var textareaStyle = _props2.textareaStyle;
-
-      var other = _objectWithoutProperties(_props2, ['children', 'className', 'disabled', 'errorStyle', 'errorText', 'floatingLabelFixed', 'floatingLabelFocusStyle', 'floatingLabelStyle', 'floatingLabelText', 'fullWidth', 'hintText', 'hintStyle', 'id', 'inputStyle', 'multiLine', 'onBlur', 'onChange', 'onFocus', 'style', 'type', 'underlineDisabledStyle', 'underlineFocusStyle', 'underlineShow', 'underlineStyle', 'rows', 'rowsMax', 'textareaStyle']);
+      var _props2 = this.props,
+          children = _props2.children,
+          className = _props2.className,
+          disabled = _props2.disabled,
+          errorStyle = _props2.errorStyle,
+          errorText = _props2.errorText,
+          floatingLabelFixed = _props2.floatingLabelFixed,
+          floatingLabelFocusStyle = _props2.floatingLabelFocusStyle,
+          floatingLabelStyle = _props2.floatingLabelStyle,
+          floatingLabelText = _props2.floatingLabelText,
+          fullWidth = _props2.fullWidth,
+          hintText = _props2.hintText,
+          hintStyle = _props2.hintStyle,
+          id = _props2.id,
+          inputStyle = _props2.inputStyle,
+          multiLine = _props2.multiLine,
+          onBlur = _props2.onBlur,
+          onChange = _props2.onChange,
+          onFocus = _props2.onFocus,
+          style = _props2.style,
+          type = _props2.type,
+          underlineDisabledStyle = _props2.underlineDisabledStyle,
+          underlineFocusStyle = _props2.underlineFocusStyle,
+          underlineShow = _props2.underlineShow,
+          underlineStyle = _props2.underlineStyle,
+          rows = _props2.rows,
+          rowsMax = _props2.rowsMax,
+          textareaStyle = _props2.textareaStyle,
+          other = _objectWithoutProperties(_props2, ['children', 'className', 'disabled', 'errorStyle', 'errorText', 'floatingLabelFixed', 'floatingLabelFocusStyle', 'floatingLabelStyle', 'floatingLabelText', 'fullWidth', 'hintText', 'hintStyle', 'id', 'inputStyle', 'multiLine', 'onBlur', 'onChange', 'onFocus', 'style', 'type', 'underlineDisabledStyle', 'underlineFocusStyle', 'underlineShow', 'underlineStyle', 'rows', 'rowsMax', 'textareaStyle']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

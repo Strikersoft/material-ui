@@ -123,10 +123,10 @@ var Checkbox = function (_Component) {
   _createClass(Checkbox, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
-      var _props = this.props;
-      var checked = _props.checked;
-      var defaultChecked = _props.defaultChecked;
-      var valueLink = _props.valueLink;
+      var _props = this.props,
+          checked = _props.checked,
+          defaultChecked = _props.defaultChecked,
+          valueLink = _props.valueLink;
 
 
       if (checked || defaultChecked || valueLink && valueLink.value) {
@@ -157,14 +157,13 @@ var Checkbox = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props2 = this.props;
-      var iconStyle = _props2.iconStyle;
-      var onCheck = _props2.onCheck;
-      var checkedIcon = _props2.checkedIcon;
-      var uncheckedIcon = _props2.uncheckedIcon;
-      var unCheckedIcon = _props2.unCheckedIcon;
-
-      var other = _objectWithoutProperties(_props2, ['iconStyle', 'onCheck', 'checkedIcon', 'uncheckedIcon', 'unCheckedIcon']);
+      var _props2 = this.props,
+          iconStyle = _props2.iconStyle,
+          onCheck = _props2.onCheck,
+          checkedIcon = _props2.checkedIcon,
+          uncheckedIcon = _props2.uncheckedIcon,
+          unCheckedIcon = _props2.unCheckedIcon,
+          other = _objectWithoutProperties(_props2, ['iconStyle', 'onCheck', 'checkedIcon', 'uncheckedIcon', 'unCheckedIcon']);
 
       var styles = getStyles(this.props, this.context);
       var boxStyles = (0, _simpleAssign2.default)(styles.box, this.state.switched && styles.boxWhenSwitched, iconStyle, this.props.disabled && styles.boxWhenDisabled);

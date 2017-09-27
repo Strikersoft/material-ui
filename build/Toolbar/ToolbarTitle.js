@@ -27,9 +27,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function getStyles(props, context) {
-  var _context$muiTheme = context.muiTheme;
-  var baseTheme = _context$muiTheme.baseTheme;
-  var toolbar = _context$muiTheme.toolbar;
+  var _context$muiTheme = context.muiTheme,
+      baseTheme = _context$muiTheme.baseTheme,
+      toolbar = _context$muiTheme.toolbar;
 
 
   return {
@@ -57,12 +57,11 @@ var ToolbarTitle = function (_Component) {
   _createClass(ToolbarTitle, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var className = _props.className;
-      var style = _props.style;
-      var text = _props.text;
-
-      var other = _objectWithoutProperties(_props, ['className', 'style', 'text']);
+      var _props = this.props,
+          className = _props.className,
+          style = _props.style,
+          text = _props.text,
+          other = _objectWithoutProperties(_props, ['className', 'style', 'text']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

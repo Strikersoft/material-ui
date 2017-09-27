@@ -31,8 +31,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function getStyles(props, context, state) {
-  var color = props.color;
-  var hoverColor = props.hoverColor;
+  var color = props.color,
+      hoverColor = props.hoverColor;
   var baseTheme = context.muiTheme.baseTheme;
 
   var offColor = color || baseTheme.palette.textColor;
@@ -88,13 +88,12 @@ var FontIcon = function (_Component) {
   _createClass(FontIcon, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var hoverColor = _props.hoverColor;
-      var onMouseLeave = _props.onMouseLeave;
-      var onMouseEnter = _props.onMouseEnter;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['hoverColor', 'onMouseLeave', 'onMouseEnter', 'style']);
+      var _props = this.props,
+          hoverColor = _props.hoverColor,
+          onMouseLeave = _props.onMouseLeave,
+          onMouseEnter = _props.onMouseEnter,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['hoverColor', 'onMouseLeave', 'onMouseEnter', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

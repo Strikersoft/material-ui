@@ -61,20 +61,19 @@ var CardTitle = function (_Component) {
   _createClass(CardTitle, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var actAsExpander = _props.actAsExpander;
-      var children = _props.children;
-      var expandable = _props.expandable;
-      var showExpandableButton = _props.showExpandableButton;
-      var style = _props.style;
-      var subtitle = _props.subtitle;
-      var subtitleColor = _props.subtitleColor;
-      var subtitleStyle = _props.subtitleStyle;
-      var title = _props.title;
-      var titleColor = _props.titleColor;
-      var titleStyle = _props.titleStyle;
-
-      var other = _objectWithoutProperties(_props, ['actAsExpander', 'children', 'expandable', 'showExpandableButton', 'style', 'subtitle', 'subtitleColor', 'subtitleStyle', 'title', 'titleColor', 'titleStyle']);
+      var _props = this.props,
+          actAsExpander = _props.actAsExpander,
+          children = _props.children,
+          expandable = _props.expandable,
+          showExpandableButton = _props.showExpandableButton,
+          style = _props.style,
+          subtitle = _props.subtitle,
+          subtitleColor = _props.subtitleColor,
+          subtitleStyle = _props.subtitleStyle,
+          title = _props.title,
+          titleColor = _props.titleColor,
+          titleStyle = _props.titleStyle,
+          other = _objectWithoutProperties(_props, ['actAsExpander', 'children', 'expandable', 'showExpandableButton', 'style', 'subtitle', 'subtitleColor', 'subtitleStyle', 'title', 'titleColor', 'titleStyle']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

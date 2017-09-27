@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -37,16 +37,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var getStyles = function getStyles(_ref, _ref2) {
-  var active = _ref.active;
-  var completed = _ref.completed;
-  var disabled = _ref.disabled;
-  var muiTheme = _ref2.muiTheme;
-  var stepper = _ref2.stepper;
-  var _muiTheme$stepper = muiTheme.stepper;
-  var textColor = _muiTheme$stepper.textColor;
-  var disabledTextColor = _muiTheme$stepper.disabledTextColor;
-  var iconColor = _muiTheme$stepper.iconColor;
-  var inactiveIconColor = _muiTheme$stepper.inactiveIconColor;
+  var active = _ref.active,
+      completed = _ref.completed,
+      disabled = _ref.disabled;
+  var muiTheme = _ref2.muiTheme,
+      stepper = _ref2.stepper;
+  var _muiTheme$stepper = muiTheme.stepper,
+      textColor = _muiTheme$stepper.textColor,
+      disabledTextColor = _muiTheme$stepper.disabledTextColor,
+      iconColor = _muiTheme$stepper.iconColor,
+      inactiveIconColor = _muiTheme$stepper.inactiveIconColor;
   var orientation = stepper.orientation;
 
 
@@ -147,15 +147,14 @@ var StepLabel = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var active = _props.active;
-      var children = _props.children;
-      var completed = _props.completed;
-      var userIcon = _props.icon;
-      var last = _props.last;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['active', 'children', 'completed', 'icon', 'last', 'style']);
+      var _props = this.props,
+          active = _props.active,
+          children = _props.children,
+          completed = _props.completed,
+          userIcon = _props.icon,
+          last = _props.last,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['active', 'children', 'completed', 'icon', 'last', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

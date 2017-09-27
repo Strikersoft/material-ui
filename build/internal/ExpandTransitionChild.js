@@ -70,10 +70,10 @@ var ExpandTransitionChild = function (_Component) {
     value: function componentWillEnter(callback) {
       var _this2 = this;
 
-      var _props = this.props;
-      var enterDelay = _props.enterDelay;
-      var transitionDelay = _props.transitionDelay;
-      var transitionDuration = _props.transitionDuration;
+      var _props = this.props,
+          enterDelay = _props.enterDelay,
+          transitionDelay = _props.transitionDelay,
+          transitionDuration = _props.transitionDuration;
 
       var element = _reactDom2.default.findDOMNode(this);
       element.style.height = 0;
@@ -92,9 +92,9 @@ var ExpandTransitionChild = function (_Component) {
   }, {
     key: 'componentWillLeave',
     value: function componentWillLeave(callback) {
-      var _props2 = this.props;
-      var transitionDelay = _props2.transitionDelay;
-      var transitionDuration = _props2.transitionDuration;
+      var _props2 = this.props,
+          transitionDelay = _props2.transitionDelay,
+          transitionDuration = _props2.transitionDuration;
 
       var element = _reactDom2.default.findDOMNode(this);
       // Set fixed height first for animated property value
@@ -109,9 +109,8 @@ var ExpandTransitionChild = function (_Component) {
   }, {
     key: 'setAutoHeight',
     value: function setAutoHeight() {
-      var _ReactDOM$findDOMNode = _reactDom2.default.findDOMNode(this);
-
-      var style = _ReactDOM$findDOMNode.style;
+      var _ReactDOM$findDOMNode = _reactDom2.default.findDOMNode(this),
+          style = _ReactDOM$findDOMNode.style;
 
       style.transitionDuration = 0;
       style.height = 'auto';
@@ -125,14 +124,13 @@ var ExpandTransitionChild = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props3 = this.props;
-      var children = _props3.children;
-      var enterDelay = _props3.enterDelay;
-      var style = _props3.style;
-      var transitionDelay = _props3.transitionDelay;
-      var transitionDuration = _props3.transitionDuration;
-
-      var other = _objectWithoutProperties(_props3, ['children', 'enterDelay', 'style', 'transitionDelay', 'transitionDuration']);
+      var _props3 = this.props,
+          children = _props3.children,
+          enterDelay = _props3.enterDelay,
+          style = _props3.style,
+          transitionDelay = _props3.transitionDelay,
+          transitionDuration = _props3.transitionDuration,
+          other = _objectWithoutProperties(_props3, ['children', 'enterDelay', 'style', 'transitionDelay', 'transitionDuration']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

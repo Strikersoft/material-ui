@@ -201,12 +201,10 @@ var RefreshIndicator = function (_Component) {
       var circle = this.getCircleAttr();
       var perimeter = Math.PI * 2 * circle.radiu;
 
-      var _getArcDeg = this.getArcDeg();
-
-      var _getArcDeg2 = _slicedToArray(_getArcDeg, 2);
-
-      var beginDeg = _getArcDeg2[0];
-      var endDeg = _getArcDeg2[1];
+      var _getArcDeg = this.getArcDeg(),
+          _getArcDeg2 = _slicedToArray(_getArcDeg, 2),
+          beginDeg = _getArcDeg2[0],
+          endDeg = _getArcDeg2[1];
 
       var arcLen = (endDeg - beginDeg) * perimeter / 360;
       var dashOffset = -beginDeg * perimeter / 360;
@@ -240,12 +238,9 @@ var RefreshIndicator = function (_Component) {
       var dx = circle.strokeWidth * 7 / 4 * p1;
       var trianglePath = triangleCx - dx + ',' + triangleCy + ' ' + (triangleCx + dx) + ',' + triangleCy + ' ' + triangleCx + ',' + (triangleCy + dx);
 
-      var _getArcDeg3 = this.getArcDeg();
-
-      var _getArcDeg4 = _slicedToArray(_getArcDeg3, 2);
-
-      var endDeg = _getArcDeg4[1];
-
+      var _getArcDeg3 = this.getArcDeg(),
+          _getArcDeg4 = _slicedToArray(_getArcDeg3, 2),
+          endDeg = _getArcDeg4[1];
 
       var theme = this.getTheme();
       return {

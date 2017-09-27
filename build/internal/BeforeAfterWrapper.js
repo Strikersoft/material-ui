@@ -76,14 +76,13 @@ var BeforeAfterWrapper = function (_Component) {
   _createClass(BeforeAfterWrapper, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var beforeStyle = _props.beforeStyle;
-      var afterStyle = _props.afterStyle;
-      var beforeElementType = _props.beforeElementType;
-      var afterElementType = _props.afterElementType;
-      var elementType = _props.elementType;
-
-      var other = _objectWithoutProperties(_props, ['beforeStyle', 'afterStyle', 'beforeElementType', 'afterElementType', 'elementType']);
+      var _props = this.props,
+          beforeStyle = _props.beforeStyle,
+          afterStyle = _props.afterStyle,
+          beforeElementType = _props.beforeElementType,
+          afterElementType = _props.afterElementType,
+          elementType = _props.elementType,
+          other = _objectWithoutProperties(_props, ['beforeStyle', 'afterStyle', 'beforeElementType', 'afterElementType', 'elementType']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

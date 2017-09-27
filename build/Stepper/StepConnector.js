@@ -28,8 +28,8 @@ var contextTypes = {
 };
 
 var StepConnector = function StepConnector(props, context) {
-  var muiTheme = context.muiTheme;
-  var stepper = context.stepper;
+  var muiTheme = context.muiTheme,
+      stepper = context.stepper;
 
 
   var styles = {
@@ -50,8 +50,8 @@ var StepConnector = function StepConnector(props, context) {
    * Clean up once we can use CSS pseudo elements
    */
   if (stepper.orientation === 'horizontal') {
-    styles.line.marginLeft = '-25%';
-    styles.line.marginRight = '-25%';
+    styles.line.marginLeft = '-20%';
+    styles.line.marginRight = '-20%';
     styles.line.borderBottomStyle = 'solid';
     styles.line.borderBottomWidth = 1;
     styles.line.borderTopStyle = 'solid';

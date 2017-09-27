@@ -31,9 +31,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 function getStyles(props, context) {
   var _titleBar;
 
-  var _context$muiTheme = context.muiTheme;
-  var baseTheme = _context$muiTheme.baseTheme;
-  var gridTile = _context$muiTheme.gridTile;
+  var _context$muiTheme = context.muiTheme,
+      baseTheme = _context$muiTheme.baseTheme,
+      gridTile = _context$muiTheme.gridTile;
 
 
   var actionPos = props.actionIcon && props.actionPosition;
@@ -109,47 +109,44 @@ var GridTile = function (_Component) {
       var imgEl = this.refs.img;
 
       if (imgEl) {
-        (function () {
-          var fit = function fit() {
-            if (imgEl.offsetWidth < imgEl.parentNode.offsetWidth) {
-              var isRtl = _this2.context.muiTheme.isRtl;
+        var fit = function fit() {
+          if (imgEl.offsetWidth < imgEl.parentNode.offsetWidth) {
+            var isRtl = _this2.context.muiTheme.isRtl;
 
-              imgEl.style.height = 'auto';
-              if (isRtl) {
-                imgEl.style.right = '0';
-              } else {
-                imgEl.style.left = '0';
-              }
-              imgEl.style.width = '100%';
-              imgEl.style.top = '50%';
-              imgEl.style.transform = imgEl.style.WebkitTransform = 'translateY(-50%)';
+            imgEl.style.height = 'auto';
+            if (isRtl) {
+              imgEl.style.right = '0';
+            } else {
+              imgEl.style.left = '0';
             }
-            imgEl.removeEventListener('load', fit);
-            imgEl = null; // prevent closure memory leak
-          };
-          if (imgEl.complete) {
-            fit();
-          } else {
-            imgEl.addEventListener('load', fit);
+            imgEl.style.width = '100%';
+            imgEl.style.top = '50%';
+            imgEl.style.transform = imgEl.style.WebkitTransform = 'translateY(-50%)';
           }
-        })();
+          imgEl.removeEventListener('load', fit);
+          imgEl = null; // prevent closure memory leak
+        };
+        if (imgEl.complete) {
+          fit();
+        } else {
+          imgEl.addEventListener('load', fit);
+        }
       }
     }
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var title = _props.title;
-      var subtitle = _props.subtitle;
-      var titlePosition = _props.titlePosition;
-      var titleBackground = _props.titleBackground;
-      var actionIcon = _props.actionIcon;
-      var actionPosition = _props.actionPosition;
-      var style = _props.style;
-      var children = _props.children;
-      var containerElement = _props.containerElement;
-
-      var other = _objectWithoutProperties(_props, ['title', 'subtitle', 'titlePosition', 'titleBackground', 'actionIcon', 'actionPosition', 'style', 'children', 'containerElement']);
+      var _props = this.props,
+          title = _props.title,
+          subtitle = _props.subtitle,
+          titlePosition = _props.titlePosition,
+          titleBackground = _props.titleBackground,
+          actionIcon = _props.actionIcon,
+          actionPosition = _props.actionPosition,
+          style = _props.style,
+          children = _props.children,
+          containerElement = _props.containerElement,
+          other = _objectWithoutProperties(_props, ['title', 'subtitle', 'titlePosition', 'titleBackground', 'actionIcon', 'actionPosition', 'style', 'children', 'containerElement']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

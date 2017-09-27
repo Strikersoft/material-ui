@@ -90,17 +90,16 @@ var TableRowColumn = function (_Component) {
   _createClass(TableRowColumn, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var children = _props.children;
-      var className = _props.className;
-      var columnNumber = _props.columnNumber;
-      var hoverable = _props.hoverable;
-      var onClick = _props.onClick;
-      var onHover = _props.onHover;
-      var onHoverExit = _props.onHoverExit;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['children', 'className', 'columnNumber', 'hoverable', 'onClick', 'onHover', 'onHoverExit', 'style']);
+      var _props = this.props,
+          children = _props.children,
+          className = _props.className,
+          columnNumber = _props.columnNumber,
+          hoverable = _props.hoverable,
+          onClick = _props.onClick,
+          onHover = _props.onHover,
+          onHoverExit = _props.onHoverExit,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['children', 'className', 'columnNumber', 'hoverable', 'onClick', 'onHover', 'onHoverExit', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

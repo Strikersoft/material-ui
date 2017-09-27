@@ -124,13 +124,12 @@ var RadioButtonGroup = function (_Component) {
 
 
       var options = _react2.default.Children.map(this.props.children, function (option) {
-        var _option$props = option.props;
-        var name = _option$props.name;
-        var value = _option$props.value;
-        var label = _option$props.label;
-        var onCheck = _option$props.onCheck;
-
-        var other = _objectWithoutProperties(_option$props, ['name', 'value', 'label', 'onCheck']);
+        var _option$props = option.props,
+            name = _option$props.name,
+            value = _option$props.value,
+            label = _option$props.label,
+            onCheck = _option$props.onCheck,
+            other = _objectWithoutProperties(_option$props, ['name', 'value', 'label', 'onCheck']);
 
         return _react2.default.createElement(_RadioButton2.default, _extends({}, other, {
           ref: option.props.value,

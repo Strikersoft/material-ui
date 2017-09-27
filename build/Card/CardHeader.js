@@ -76,20 +76,19 @@ var CardHeader = function (_Component) {
   _createClass(CardHeader, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var actAsExpander = _props.actAsExpander;
-      var avatarProp = _props.avatar;
-      var children = _props.children;
-      var expandable = _props.expandable;
-      var showExpandableButton = _props.showExpandableButton;
-      var style = _props.style;
-      var subtitle = _props.subtitle;
-      var subtitleStyle = _props.subtitleStyle;
-      var textStyle = _props.textStyle;
-      var title = _props.title;
-      var titleStyle = _props.titleStyle;
-
-      var other = _objectWithoutProperties(_props, ['actAsExpander', 'avatar', 'children', 'expandable', 'showExpandableButton', 'style', 'subtitle', 'subtitleStyle', 'textStyle', 'title', 'titleStyle']);
+      var _props = this.props,
+          actAsExpander = _props.actAsExpander,
+          avatarProp = _props.avatar,
+          children = _props.children,
+          expandable = _props.expandable,
+          showExpandableButton = _props.showExpandableButton,
+          style = _props.style,
+          subtitle = _props.subtitle,
+          subtitleStyle = _props.subtitleStyle,
+          textStyle = _props.textStyle,
+          title = _props.title,
+          titleStyle = _props.titleStyle,
+          other = _objectWithoutProperties(_props, ['actAsExpander', 'avatar', 'children', 'expandable', 'showExpandableButton', 'style', 'subtitle', 'subtitleStyle', 'textStyle', 'title', 'titleStyle']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

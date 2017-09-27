@@ -282,11 +282,11 @@ var Slider = function (_Component) {
       }
       _this.onDragStart(event);
     }, _this.onHandleKeyDown = function (event) {
-      var _this$props = _this.props;
-      var axis = _this$props.axis;
-      var min = _this$props.min;
-      var max = _this$props.max;
-      var step = _this$props.step;
+      var _this$props = _this.props,
+          axis = _this$props.axis,
+          min = _this$props.min,
+          max = _this$props.max,
+          step = _this$props.step;
 
       var action = void 0;
 
@@ -518,9 +518,9 @@ var Slider = function (_Component) {
     key: 'setPercent',
     value: function setPercent(percent, callback) {
       var value = this.alignValue(this.percentToValue(percent));
-      var _props = this.props;
-      var min = _props.min;
-      var max = _props.max;
+      var _props = this.props,
+          min = _props.min,
+          max = _props.max;
 
       var alignedPercent = (value - min) / (max - min);
       if (this.state.value !== value) {
@@ -535,9 +535,9 @@ var Slider = function (_Component) {
   }, {
     key: 'alignValue',
     value: function alignValue(val) {
-      var _props2 = this.props;
-      var step = _props2.step;
-      var min = _props2.min;
+      var _props2 = this.props,
+          step = _props2.step,
+          min = _props2.min;
 
       var alignValue = Math.round((val - min) / step) * step + min;
       return parseFloat(alignValue.toFixed(5));
@@ -611,26 +611,25 @@ var Slider = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props3 = this.props;
-      var axis = _props3.axis;
-      var description = _props3.description;
-      var disabled = _props3.disabled;
-      var disableFocusRipple = _props3.disableFocusRipple;
-      var error = _props3.error;
-      var max = _props3.max;
-      var min = _props3.min;
-      var name = _props3.name;
-      var onBlur = _props3.onBlur;
-      var onChange = _props3.onChange;
-      var onDragStart = _props3.onDragStart;
-      var onDragStop = _props3.onDragStop;
-      var onFocus = _props3.onFocus;
-      var required = _props3.required;
-      var sliderStyle = _props3.sliderStyle;
-      var step = _props3.step;
-      var style = _props3.style;
-
-      var other = _objectWithoutProperties(_props3, ['axis', 'description', 'disabled', 'disableFocusRipple', 'error', 'max', 'min', 'name', 'onBlur', 'onChange', 'onDragStart', 'onDragStop', 'onFocus', 'required', 'sliderStyle', 'step', 'style']);
+      var _props3 = this.props,
+          axis = _props3.axis,
+          description = _props3.description,
+          disabled = _props3.disabled,
+          disableFocusRipple = _props3.disableFocusRipple,
+          error = _props3.error,
+          max = _props3.max,
+          min = _props3.min,
+          name = _props3.name,
+          onBlur = _props3.onBlur,
+          onChange = _props3.onChange,
+          onDragStart = _props3.onDragStart,
+          onDragStop = _props3.onDragStop,
+          onFocus = _props3.onFocus,
+          required = _props3.required,
+          sliderStyle = _props3.sliderStyle,
+          step = _props3.step,
+          style = _props3.style,
+          other = _objectWithoutProperties(_props3, ['axis', 'description', 'disabled', 'disableFocusRipple', 'error', 'max', 'min', 'name', 'onBlur', 'onChange', 'onDragStart', 'onDragStop', 'onFocus', 'required', 'sliderStyle', 'step', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

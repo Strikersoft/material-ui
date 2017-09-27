@@ -46,15 +46,14 @@ var ScaleIn = function (_Component) {
   _createClass(ScaleIn, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var children = _props.children;
-      var childStyle = _props.childStyle;
-      var enterDelay = _props.enterDelay;
-      var maxScale = _props.maxScale;
-      var minScale = _props.minScale;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['children', 'childStyle', 'enterDelay', 'maxScale', 'minScale', 'style']);
+      var _props = this.props,
+          children = _props.children,
+          childStyle = _props.childStyle,
+          enterDelay = _props.enterDelay,
+          maxScale = _props.maxScale,
+          minScale = _props.minScale,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['children', 'childStyle', 'enterDelay', 'maxScale', 'minScale', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

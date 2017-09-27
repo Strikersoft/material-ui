@@ -201,17 +201,16 @@ var FloatingActionButton = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var backgroundColor = _props.backgroundColor;
-      var className = _props.className;
-      var disabled = _props.disabled;
-      var mini = _props.mini;
-      var secondary = _props.secondary;
-      var iconStyle = _props.iconStyle;
-      var iconClassName = _props.iconClassName;
-      var zDepth = _props.zDepth;
-
-      var other = _objectWithoutProperties(_props, ['backgroundColor', 'className', 'disabled', 'mini', 'secondary', 'iconStyle', 'iconClassName', 'zDepth']);
+      var _props = this.props,
+          backgroundColor = _props.backgroundColor,
+          className = _props.className,
+          disabled = _props.disabled,
+          mini = _props.mini,
+          secondary = _props.secondary,
+          iconStyle = _props.iconStyle,
+          iconClassName = _props.iconClassName,
+          zDepth = _props.zDepth,
+          other = _objectWithoutProperties(_props, ['backgroundColor', 'className', 'disabled', 'mini', 'secondary', 'iconStyle', 'iconClassName', 'zDepth']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

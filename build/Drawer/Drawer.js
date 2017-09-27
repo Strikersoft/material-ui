@@ -229,10 +229,12 @@ var Drawer = function (_Component) {
           transition: !this.state.swiping && _transitions2.default.easeOut(null, 'transform', null),
           backgroundColor: theme.color,
           overflow: 'auto',
-          WebkitOverflowScrolling: 'touch' },
+          WebkitOverflowScrolling: 'touch' // iOS momentum scrolling
+        },
         overlay: {
           zIndex: muiTheme.zIndex.drawerOverlay,
-          pointerEvents: this.state.open ? 'auto' : 'none' },
+          pointerEvents: this.state.open ? 'auto' : 'none' // Bypass mouse events when left nav is closing.
+        },
         rootWhenOpenRight: {
           left: 'auto',
           right: 0
@@ -307,17 +309,17 @@ var Drawer = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var children = _props.children;
-      var className = _props.className;
-      var containerClassName = _props.containerClassName;
-      var containerStyle = _props.containerStyle;
-      var docked = _props.docked;
-      var openSecondary = _props.openSecondary;
-      var overlayClassName = _props.overlayClassName;
-      var overlayStyle = _props.overlayStyle;
-      var style = _props.style;
-      var zDepth = _props.zDepth;
+      var _props = this.props,
+          children = _props.children,
+          className = _props.className,
+          containerClassName = _props.containerClassName,
+          containerStyle = _props.containerStyle,
+          docked = _props.docked,
+          openSecondary = _props.openSecondary,
+          overlayClassName = _props.overlayClassName,
+          overlayStyle = _props.overlayStyle,
+          style = _props.style,
+          zDepth = _props.zDepth;
 
 
       var styles = this.getStyles();

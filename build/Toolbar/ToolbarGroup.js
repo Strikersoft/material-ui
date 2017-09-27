@@ -27,12 +27,12 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function getStyles(props, context) {
-  var firstChild = props.firstChild;
-  var lastChild = props.lastChild;
-  var _context$muiTheme = context.muiTheme;
-  var baseTheme = _context$muiTheme.baseTheme;
-  var button = _context$muiTheme.button;
-  var toolbar = _context$muiTheme.toolbar;
+  var firstChild = props.firstChild,
+      lastChild = props.lastChild;
+  var _context$muiTheme = context.muiTheme,
+      baseTheme = _context$muiTheme.baseTheme,
+      button = _context$muiTheme.button,
+      toolbar = _context$muiTheme.toolbar;
 
 
   var marginHorizontal = baseTheme.spacing.desktopGutter;
@@ -103,14 +103,13 @@ var ToolbarGroup = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var _props = this.props;
-      var children = _props.children;
-      var className = _props.className;
-      var firstChild = _props.firstChild;
-      var lastChild = _props.lastChild;
-      var style = _props.style;
-
-      var other = _objectWithoutProperties(_props, ['children', 'className', 'firstChild', 'lastChild', 'style']);
+      var _props = this.props,
+          children = _props.children,
+          className = _props.className,
+          firstChild = _props.firstChild,
+          lastChild = _props.lastChild,
+          style = _props.style,
+          other = _objectWithoutProperties(_props, ['children', 'className', 'firstChild', 'lastChild', 'style']);
 
       var prepareStyles = this.context.muiTheme.prepareStyles;
 

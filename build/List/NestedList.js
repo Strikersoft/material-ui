@@ -38,11 +38,11 @@ var NestedList = function (_Component) {
   _createClass(NestedList, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var children = _props.children;
-      var open = _props.open;
-      var nestedLevel = _props.nestedLevel;
-      var style = _props.style;
+      var _props = this.props,
+          children = _props.children,
+          open = _props.open,
+          nestedLevel = _props.nestedLevel,
+          style = _props.style;
 
 
       var styles = {
